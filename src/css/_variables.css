@@ -1,0 +1,71 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --color-primary: #222222;
+  --color-secondary: #FAF9F6;
+
+  /* colors */
+  --coral: #EC5E52;
+  --coral-hover: #f4887d;
+  --color: #;
+  --color-purple: #383153;
+  --color-lavender: #DEDDFC;
+  --delete: #960000;
+
+  /* shades */
+  --gray-4: #595D62;
+  --gray-3: #969696;
+  --gray-2: #D9D9D9;
+  --gray-1: #f5f5f5;
+  --white: #FAF9F6;
+
+  /* feedback - not used, but keeping for later use with JS */
+  --color-success: #28C373;
+  --color-error: #CC2E22;
+  --color-warning: #F0BF4E;
+
+  /* body */
+  --padding-x: 180px;
+  --ipad-padding-x: 60px;
+  --mobile-padding-x: 40px;
+
+  /* fonts */
+  body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* nav */
+  .sidebar nav a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* buttons */
+  .cta-sm,
+  .cta-md,
+  .cta-l {
+    font-weight: 600;
+  }
+
+  /*.cta-sm {
+    font-size: 14px;
+  }*/
+
+  .cta-md {
+    font-size: 14px;
+  }
+
+  .cta-l{
+    font-size: 16px;
+  }
+
+}
