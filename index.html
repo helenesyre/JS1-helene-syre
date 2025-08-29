@@ -14,7 +14,7 @@
     <script defer src="src/js/main.js"></script>
   </head>
   <body>
-    <div>
+    <div class="site-wrapper">
       <aside class="sidebar">
         <a href="index.html">
           <svg role="img" class="logo" aria-label="Gamehub logo" width="100%" height="100%" viewBox="0 0 178 34"xmlns="http://www.w3.org/2000/svg">
@@ -39,61 +39,72 @@
         </nav>
       </aside>
 
-      <div>
-        <main class="main-content">
+      <section class="main-content">
         <div class="main-content-margin">
-          <h1>Welcome to Gamehub!</h1>
-          <h2>Popular Games</h2>
-          <div id="container" class="container"></div>
+          <form class="search-bar" id="search-bar">
+            <input type="text" class="search-input" id="search-input" name="#" placeholder="Search for a game..." />
+            <button type="submit" class="search-bar-button" aria-label="Search">
+              <svg class="size-6 icon-m search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </button>
+          </form>
         </div>
-      </main>
+        <main>
+          <div class="main-content-margin">
+            <h1>Welcome to Gamehub!</h1>
+            <h2>Popular Games</h2>
+            <div id="container" class="container"></div>
+          </div>
+        </main>
 
-      <footer class="site-footer">
-        <div class="footer-container">
-          
-          <!-- Column 1: Logo / About -->
-          <div class="footer-col">
-            <h2 class="footer-logo">MyWebsite</h2>
-            <p class="footer-about">Making cool stuff since 2025.</p>
+        <footer class="site-footer">
+          <div class="footer-container">
+            
+            <!-- Column 1: Logo / About -->
+            <div class="footer-col">
+              <h2 class="footer-logo">MyWebsite</h2>
+              <p class="footer-about">Making cool stuff since 2025.</p>
+            </div>
+
+            <!-- Column 2: Navigation -->
+            <div class="footer-col">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Social Links -->
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
           </div>
 
-          <!-- Column 2: Navigation -->
-          <div class="footer-col">
-            <h3>Navigation</h3>
-            <ul>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
+          <!-- Bottom bar -->
+          <div class="footer-bottom">
+            <p class="footer-copy">
+              ©2025 Gamehub. All rights reserved.
+            </p>
 
-          <!-- Column 3: Social Links -->
-          <div class="footer-col">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
+            <div class="footer-links">
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+            </div>
           </div>
-        </div>
+        </footer>
+      </section>
 
-        <!-- Bottom bar -->
-        <div class="footer-bottom">
-          <p class="footer-copy">
-            ©2025 Gamehub. All rights reserved.
-          </p>
-
-          <div class="footer-links">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy</a>
-          </div>
-        </div>
-      </footer>
-      </div>
-      
     </div>
+
   </body>
 </html>
