@@ -24,16 +24,16 @@ a {
     gap: 8px;
 }
 
-/* coral buttons */
-.cta-coral {
-  background-color: var(--coral);
+/* orange buttons */
+.cta-color-orange {
+  background-color: var(--color-orange);
   color: var(--white, #fff);
   border: none;
   margin-bottom: 0px;
 }
 
-.cta-coral:hover {
-  background-color: var(--coral-hover);
+.cta-color-orange:hover {
+  background-color: var(--color-orange-hover);
   cursor: pointer;
   transition: color 0.3s;
 }
