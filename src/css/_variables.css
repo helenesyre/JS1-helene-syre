@@ -6,11 +6,12 @@
   --color-secondary: #FAF9F6;
 
   /* colors */
-  --coral: #EC5E52;
-  --coral-hover: #f4887d;
-  --color: #;
-  --color-purple: #383153;
-  --color-lavender: #DEDDFC;
+  --color-blue: #3045E1;
+  --color-purple: #6532DE;
+  --color-vivid-purple: #A433CF;
+  --color-pink: #D73980;
+  --color-orange: #E6453D;
+  --color-orange-hover: #C63A34;
   --delete: #960000;
 
   /* shades */
@@ -66,6 +67,15 @@
 
   .cta-l{
     font-size: 16px;
+  }
+
+  /* footer */
+  .footer-col ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-terms a {
+    font-size: 0.875rem;
   }
 
 }
