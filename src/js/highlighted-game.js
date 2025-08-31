@@ -6,10 +6,11 @@ async function fetchAndCreateHighlightedGame() {
     const data = await response.json();
     const game = data.data;
 
-    const gameHTML = document.createElement('div'); // oppretter div for hvert spill
+    const gameHTML = document.createElement('a'); // oppretter div for hvert spill
+
+    gameHTML.href = `/product/?id=${game.id}`;
 
     gameHTML.innerHTML = `
-        <a href="product/?id=${game.id}">
             <div class="featured-card">
                 <img class="hero-bg" src="${game.image.url}" alt="${game.image.alt}">
                 <div class="hero-content">
@@ -41,10 +42,8 @@ async function fetchAndCreateHighlightedGame() {
                             </svg>
                         </div>
                     </div>
-                    
                 </div>
-            </div>
-        </a>`;
+            </div>`;
     highlightedGame.appendChild(gameHTML);
   } catch (error) {
     console.error("Error fetching products:", error);
