@@ -1,0 +1,29 @@
+/* iPad/tablet */
+@media (min-width: 840px) {
+    /* Navbar */
+    .sidebar {
+        width: 200px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    /* Navbar */
+    .sidebar {
+        width: 270px;
+    }
+
+    .sidebar nav a {
+        font-size: 1rem;
+    }
+
+    /* Logo */
+    .logo {
+        max-width: 170px;
+    }
+
+    /* Icons */
+    .icon-m {
+        width: 24px;
+    }
+}
