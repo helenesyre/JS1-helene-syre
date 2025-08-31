@@ -193,6 +193,7 @@ body {
 .card {
   overflow: hidden;
   transition: transform 0.3s;
+  margin: 28px 0;
 }
 
 .card:hover {
@@ -233,6 +234,7 @@ body {
   margin: 0;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
 .card-genre {
@@ -265,7 +267,6 @@ body {
 }
 
 /* Icons */
-
 .icon-s {
   width: 16px;
   height: auto;
@@ -276,14 +277,9 @@ body {
   height: auto;
 }
 
-
 /* Footer */
-/*footer {
-  margin-left: 270px;
-}*/
-
 footer {
-  background: var(--color-blue);
+  background: var(--color-primary);
   color: var(--color-secondary);
   padding: 2rem;
 }
@@ -323,7 +319,7 @@ footer {
 }
 
 .social-links i {
-  font-size: 1.5rem;   /* Change this value to your desired icon size */
+  font-size: 1.5rem;
 }
 
 .footer-bottom {
