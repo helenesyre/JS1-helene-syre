@@ -1,39 +1,3 @@
 a {
   text-decoration: none;
 }
-
-/* Buttons */
-/*.cta-sm {
-  border-radius: 8px;
-  padding: 8px 12px;
-}*/
-
-.cta-md {
-  border-radius: 5px;
-  padding: 8px 16px;
-}
-
-.cta-l{
-  border-radius: 5px;
-  padding: 16px 24px;
-}
-
-.cta-md, .cta-l{
-    display: flex;
-    width: fit-content;
-    gap: 8px;
-}
-
-/* orange buttons */
-.cta-color-orange {
-  background-color: var(--color-orange);
-  color: var(--white, #fff);
-  border: none;
-  margin-bottom: 0px;
-}
-
-.cta-color-orange:hover {
-  background-color: var(--color-orange-hover);
-  cursor: pointer;
-  transition: color 0.3s;
-}
