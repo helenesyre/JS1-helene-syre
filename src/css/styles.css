@@ -5,6 +5,9 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 @import url("./imports/links.css");
+@import url("./imports/buttons.css");
+/*@import url("./imports/forms.css");
+@import url("./imports/icons.css");*/
 
 body {
   color: var(--color-primary);
@@ -33,13 +36,13 @@ body {
   padding: 30px;
 }
 
- h1 {
-    font-size: 2.5rem;
-  }
+h1 {
+  font-size: 2.5rem;
+}
 
-  h2 {
-    font-size: 2rem;
-  }
+h2 {
+  font-size: 2rem;
+}
 
 /* Navbar */
 .sidebar {
@@ -49,7 +52,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 270px;
+  width: 200px;
   overflow-x: hidden;
   border-right: 1px solid var(--gray-2);
   display: flex;
@@ -73,7 +76,7 @@ body {
 .sidebar nav a {
   display: block;
   color: var(--color-primary);
-  
+  font-size: 0.9rem;
   transition: background-color 0.3s;
 }
 
@@ -190,6 +193,81 @@ body {
 
 
 /* Card styles */
+/* Featured card */
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 32px;;
+  align-items: center;
+}
+
+.featured-card {
+  position: relative;
+  overflow: hidden;
+  margin: 28px 0;
+}
+
+.card-information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featured-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.7) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: var(--color-primary);
+}
+
+.featured-card .card-genre {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 12px;
+  border-radius: 6px;
+  background: rgba(245, 247, 250, 0.60);
+  color: var(--color-primary);
+  flex: 0 0 auto;
+  max-width: fit-content;
+  width: auto;
+  min-width: 0;
+}
+
+.featured-card h3,
+.featured-card p {
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+/* Product cards*/
 .card {
   overflow: hidden;
   transition: transform 0.3s;
@@ -204,7 +282,7 @@ body {
   width: 100%;
   height: 350px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .card-content {
@@ -232,16 +310,13 @@ body {
 
 .card-title {
   margin: 0;
-  font-size: 1.2rem;
   margin-bottom: 10px;
   color: var(--color-primary);
 }
 
-.card-genre {
+.card .card-genre {
   margin: 0;
-  font-size: 1rem;
   color: rgba(34, 34, 34, 0.7);
-  font-weight: medium;
 }
 
 .card-price {
@@ -253,15 +328,15 @@ body {
 
 /* Logo */
 .logo {
-  max-width: 170px;
+  max-width: 150px;
   height: auto;
 }
 
-.icon-two-part-style1 {
+.logo-two-part-style1 {
   --color-1: var(--color-primary);
   --color-2: var(--color-orange);
 }
-.icon-two-part-style2 {
+.logo-two-part-style2 {
   --color-1: var(--color-secondary);
   --color-2: var(--color-orange);
 }
@@ -273,8 +348,22 @@ body {
 }
 
 .icon-m {
-  width: 24px;
+  width: 22px;
   height: auto;
+}
+
+.icon-white {
+  color: var(--color-secondary);
+}
+
+.icon-background {
+  background: var(--color-primary);
+  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
