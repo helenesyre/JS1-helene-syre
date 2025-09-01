@@ -14,10 +14,18 @@
   padding: 10px 20px;
 }
 
-.cta-md, .cta-l{
-    display: flex;
-    width: fit-content;
-    gap: 8px;
+.cta-xl {
+  border-radius: 6px;
+  padding: 14px 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.cta-md, .cta-l, .cta-no-padding{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
 }
 
 /* orange buttons */
@@ -44,4 +52,13 @@
   background-color: rgba(230, 69, 61, 0.7);
   cursor: pointer;
   transition: color 0.3s;
+}
+
+/* no padding buttons */
+.cta-no-padding, .wishlist {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+  padding: 0;
+  margin-bottom: 0px;
 }
