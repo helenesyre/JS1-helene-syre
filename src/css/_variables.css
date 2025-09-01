@@ -12,6 +12,7 @@
   --color-pink: #D73980;
   --color-orange: #E6453D;
   --color-orange-hover: #C63A34;
+  --color-yellow: #FFAD0F;
   --delete: #960000;
 
   /* shades */
@@ -68,6 +69,10 @@
     font-size: 16px;
   }
 
+  .cta-xl {
+    font-size: 18px;
+  }
+
   /* cards */
   .featured-card h3 {
     font-size: 2.25rem;
@@ -95,6 +100,28 @@
 
   .footer-terms a {
     font-size: 0.875rem;
+  }
+
+  /* Product */
+  .tag {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .current-price,
+  .original-price {
+    font-weight: 700;
+  }
+
+  .cta-no-padding, .wishlist {
+    font-size: 1.25rem;
+    font-weight: 600;
   }
 
 }
