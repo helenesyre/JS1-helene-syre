@@ -210,3 +210,39 @@
   border-radius: 50%;
   display: block;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: end;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.5rem;
+  content: "/";
+}
+
+.page {
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.page:hover {
+  text-decoration: underline;
+  color: var(--color-vivid-purple);
+}
+
+.current-page {
+  font-weight: 600;
+  color: var(--color-orange);
+}
