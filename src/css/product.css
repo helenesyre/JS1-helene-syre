@@ -1,0 +1,81 @@
+.product-page {
+    display: flex;
+    flex-direction: row;
+    gap: 94px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+    max-width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.game-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.star-filled,
+.star-empty {
+    font-size: 20px;
+}
+
+.star-filled {
+    color: var(--color-yellow); /* Gold color for filled stars */
+}
+
+.star-empty {
+    color: var(--gray-2); /* Grey color for empty stars */
+}
+
+.game-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.game-description {
+    width: 300px;
+}
+
+.price-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-orange);
+}
+
+.original-price {
+    font-size: 2rem;
+    color: var(--gray-3);
+    text-decoration: line-through;
+}
+/* Quantity selector */
