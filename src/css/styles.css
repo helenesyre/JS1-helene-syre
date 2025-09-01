@@ -177,7 +177,7 @@ h2 {
 .card-price {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--color-orange);
+  color: var(--color-primary);
   font-weight: bold;
 }
 
