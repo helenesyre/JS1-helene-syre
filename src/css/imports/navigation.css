@@ -1,0 +1,212 @@
+/* Navbar */
+/* Menu button - hamburger */
+/* From https://www.youtube.com/watch?v=neb7WcDixoY&t=1s */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.menu-toggle {
+	display: block;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 99px;
+	background-color: var(--color-vivid-purple);
+	cursor: pointer;
+    z-index: 4;
+}
+
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 22px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1.5px; /* Line thicknes */
+  border-radius: 99px;
+  background-color: var(--color-secondary);
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -6px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 6px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar.is-active {
+  left: 0;
+}
+
+.sidebar {
+  position: fixed;
+  padding: 30px;
+  top: 0;
+  left: -300px;
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  transition: 0.3s linear;
+  z-index: 4;
+  background: var(--color-secondary);
+  border-right: 1px solid var(--gray-2);
+}
+/* Tutorial done */
+
+.sidebar nav {
+  margin-top: 64px;
+  width: 100%;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav li {
+  margin: 0 -10px;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.sidebar nav li:hover {
+  background-color: var(--color-purple);
+  color: var(--color-secondary);
+}
+
+.sidebar nav a.active {
+  color: var(--color-orange);
+}
+
+.sidebar .icon-m {
+  color: var(--color-primary);
+}
+
+.sidebar .active-icon {
+  color: var(--color-orange);
+}
+
+.sidebar nav li:hover svg {
+  color: var(--color-secondary);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Header nav */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Search input */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid var(--gray-2);
+  border-radius: 36px;
+  padding: 10px 24px;
+  box-sizing: border-box;
+  margin-right: 40px;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: var(--color-primary);
+  opacity: 0.7;
+  margin-right: 16px;
+  font-family: inherit;
+}
+
+.search-bar-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-button svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.search-icon {
+  color: var(--color-primary);
+  opacity: 0.7;
+}
+
+/* Profile icon */
+.profile-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: conic-gradient(#e76e62, #222 270deg, #e76e62 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px; /* Border */
+  box-sizing: border-box;
+}
+
+.profile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
