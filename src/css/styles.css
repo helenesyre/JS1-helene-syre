@@ -6,6 +6,8 @@
 /* Feel free to add as many of these imports as you need */
 @import url("./imports/links.css");
 @import url("./imports/buttons.css");
+@import url("./imports/navigation.css");
+@import url("./imports/footer.css");
 /*@import url("./imports/forms.css");
 @import url("./imports/icons.css");*/
 
@@ -26,8 +28,8 @@ body {
 }
 
 .main-content {
-  margin-left: 270px;
   flex: 1;
+  padding-top: 5rem;
 }
 
 .main-content-margin {
@@ -42,153 +44,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-}
-
-/* Navbar */
-.sidebar {
-  padding: 30px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 200px;
-  overflow-x: hidden;
-  border-right: 1px solid var(--gray-2);
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar nav {
-  margin-top: 64px;
-  width: 100%;
-}
-
-.sidebar nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.sidebar nav a {
-  display: block;
-  color: var(--color-primary);
-  font-size: 0.9rem;
-  transition: background-color 0.3s;
-}
-
-.sidebar nav li {
-  margin: 0 -10px;
-  padding: 10px 12px;
-  border-radius: 5px;
-}
-
-.sidebar nav li:hover {
-  background-color: var(--color-purple);
-  color: var(--color-secondary);
-}
-
-.sidebar nav a.active {
-  color: var(--color-orange);
-}
-
-.sidebar .icon-m {
-  color: var(--color-primary);
-}
-
-.sidebar .active-icon {
-  color: var(--color-orange);
-}
-
-.sidebar nav li:hover svg {
-  color: var(--color-secondary);
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* Header nav */
-.header-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-/* Search input */
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 370px;
-  border: 1px solid var(--gray-2);
-  border-radius: 36px;
-  padding: 10px 24px;
-  box-sizing: border-box;
-}
-
-.search-input {
-  flex: 1;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  color: var(--color-primary);
-  opacity: 0.7;
-  margin-right: 16px;
-  font-family: inherit;
-}
-
-.search-bar-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.search-bar-button svg {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-
-.search-icon {
-  color: var(--color-primary);
-  opacity: 0.7;
-}
-
-/* Profile icon */
-.profile-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: conic-gradient(#e76e62, #222 270deg, #e76e62 360deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5px; /* Border */
-  box-sizing: border-box;
-}
-
-.profile-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  background: #f9f9f9;
 }
 
 
@@ -364,69 +219,4 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Footer */
-footer {
-  background: var(--color-primary);
-  color: var(--color-secondary);
-  padding: 2rem;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.footer-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-col ul {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-col ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.footer-col ul li a:hover,
-.footer-terms a:hover {
-  color: #fff;
-}
-
-.social-links i {
-  font-size: 1.5rem;
-}
-
-.footer-bottom {
-  border-top: 1px solid var(--color-secondary);
-  padding-top: 20px;
-  margin-top: 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-terms {
-  display: flex;
-  gap: 16px;
-  flex-direction: row;
-}
-
-.footer-terms a {
-  color: #ccc;
-  text-decoration: none;
 }
