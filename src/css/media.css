@@ -1,8 +1,30 @@
 /* iPad/tablet */
 @media (min-width: 840px) {
     /* Navbar */
+    .menu-toggle {
+        display: none;
+    }
+
     .sidebar {
+        padding: 30px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 200px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding-top: 0;
+        margin-left: 200px;
+    }
+
+    .search-bar {
+        width: 370px;
+        margin-right: 0;
     }
 }
 
@@ -16,6 +38,10 @@
     .sidebar nav a {
         font-size: 1rem;
     }
+
+    .main-content {
+        margin-left: 270px;
+        }
 
     /* Logo */
     .logo {
