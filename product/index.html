@@ -14,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- JavaScript -->
-     <script defer src="../src/js/popularGames.js"></script>
+    <script defer src="../src/js/popularGames.js"></script>
     <script defer src="../src/js/navigation.js"></script>
+    <script defer src="../product/productPage.js"></script>
     <script src="https://kit.fontawesome.com/3965f66036.js" crossorigin="anonymous"></script>
   </head>
   <body class="site-wrapper">
@@ -172,16 +173,16 @@
                     <span class="original-price">$39.99</span>
                   </div>
                 </div>
+
                 <div class="quantity-selector">
-                    <label for="quantity">Quantity</label>
-                    <select id="quantity">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+                  <label for="quantity" class="quantity-label">Quantity:</label>
+                  <div>
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                  </div>
                 </div>
+                
                 <a class="cta-no-padding wishlist" href="#">
                   <svg role="img" class="icon-m wishlist" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25">
                     <path d="M21.31,9.62c0-2.56-2.13-4.64-4.77-4.64-1.97,0-3.66,1.16-4.39,2.82-.73-1.66-2.42-2.82-4.39-2.82-2.63,0-4.77,2.08-4.77,4.64,0,7.44,9.15,12.36,9.15,12.36,0,0,9.15-4.92,9.15-12.36Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.75px;"/>
