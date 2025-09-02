@@ -119,7 +119,8 @@
   color: var(--color-primary);
 }
 
-.sidebar .active-icon {
+.sidebar .active-icon,
+.active-icon {
   color: var(--color-orange);
 }
 
