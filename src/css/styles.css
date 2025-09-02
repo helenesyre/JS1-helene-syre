@@ -8,8 +8,7 @@
 @import url("./imports/buttons.css");
 @import url("./imports/navigation.css");
 @import url("./imports/footer.css");
-/*@import url("./imports/forms.css");
-@import url("./imports/icons.css");*/
+/*@import url("./imports/icons.css");*/
 
 body {
   color: var(--color-primary);
@@ -154,7 +153,7 @@ h2 {
 .card-bottom {
   display: flex;
   justify-content: space-between;
-  align-items:start
+  align-items: center;
 }
 
 .card-info {
@@ -174,11 +173,33 @@ h2 {
   color: rgba(34, 34, 34, 0.7);
 }
 
-.card-price {
+.card-price, .card-price-discount, .card-price-original {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--color-primary);
   font-weight: bold;
+}
+
+.card-price {
+  color: var(--color-primary);
+}
+
+.price-sale {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.card-price-original {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--gray-3);
+  font-weight: 500;
+}
+
+.card-price-discount {
+  font-weight: bold;
+  color: var(--color-orange);
 }
 
 /* Logo */
