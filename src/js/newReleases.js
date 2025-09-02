@@ -1,11 +1,10 @@
-const container = document.querySelector(".container");
-const API_URL = "https://v2.api.noroff.dev/gamehub";
+const newReleases = document.querySelector(".newReleases");
 
 async function fetchAndCreateProducts() {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-    const products = data.data.slice(0, 5);
+    const products = data.data.slice(5, 10);
 
     products.forEach(game => {
         const gameHTML = document.createElement('div'); // oppretter div for hvert spill
@@ -54,7 +53,7 @@ async function fetchAndCreateProducts() {
                     </div>
                 </div>
             </a>`;
-        container.appendChild(gameHTML);
+        newReleases.appendChild(gameHTML);
     });
   } catch (error) {
     console.error("Error fetching products:", error);
