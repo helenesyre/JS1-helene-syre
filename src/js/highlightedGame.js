@@ -20,7 +20,7 @@ async function fetchAndCreateHighlightedGame() {
                         <p>${game.description}</p>
                     </div>
                     <div class="hero-buttons">
-                        <a class="cta-l cta-color-orange" href="/product/${game.id}/">
+                        <a class="cta-l cta-color-orange add-cart" href="/product/${game.id}/">
                             <span>Buy now</span>
                             <svg role="img" class="icon-s" aria-label="Cart" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
