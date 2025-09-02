@@ -142,19 +142,26 @@ h2 {
 
 .card-content {
   padding: 12px 0;
+  position: relative;
 }
 
 .card-top {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 16px;
   align-items:start
 }
 
+.card-top a{
+  flex: 1;
+}
+
 .card-bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.card-bottom a {
+  flex: 1;
 }
 
 .card-info {
@@ -201,6 +208,11 @@ h2 {
 .card-price-discount {
   font-weight: bold;
   color: var(--color-orange);
+}
+
+.test {
+    width: 20px;
+    height: 20px;
 }
 
 /* Logo */
