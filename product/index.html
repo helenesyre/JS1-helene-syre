@@ -176,10 +176,18 @@
 
                 <div class="quantity-selector">
                   <label for="quantity" class="quantity-label">Quantity:</label>
-                  <div>
-                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                  <div class="quantity-controls">
+                    <button class="qty-count btn-minus" data-action="minus" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                      </svg>
+                    </button>
                     <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
-                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                    <button class="qty-count btn-plus" data-action="add" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
                 
@@ -190,7 +198,7 @@
                   <span>Add to wishlist</span>
                 </a>
                 <a class="cta-xl cta-color-orange" href="#">
-                  <span>Add to cart</span>
+                  <span>Buy now</span>
                 </a>
               </div>
             </div>
