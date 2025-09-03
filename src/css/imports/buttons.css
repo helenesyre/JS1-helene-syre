@@ -21,6 +21,14 @@
   width: 60%;
 }
 
+.cta-xl-full {
+  border-radius: 6px;
+  padding: 14px 30px;
+  text-align: center;
+  width: 100%;
+}
+
+
 .cta-md, .cta-l, .cta-no-padding{
   display: flex;
   width: fit-content;
@@ -50,6 +58,20 @@
 
 .cta-border-color-orange:hover {
   background-color: rgba(230, 69, 61, 0.7);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* blue buttons */
+.cta-color-blue {
+  background-color: var(--color-blue);
+  color: var(--white);
+  border: none;
+  margin-bottom: 0px;
+}
+
+.cta-color-blue:hover {
+  background-color: var(--color-blue-hover);
   cursor: pointer;
   transition: color 0.3s;
 }
