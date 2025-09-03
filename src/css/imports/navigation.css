@@ -215,7 +215,7 @@
 /* Cart tab */
 .cart-tab {
   width: fit-content ;
-  min-width: 300px;
+  min-width: 350px;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   position: fixed;
