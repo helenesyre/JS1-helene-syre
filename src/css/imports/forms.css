@@ -1,8 +1,9 @@
+/* Billing information */
 .billing-info {
     margin-top: 28px;
 }
 
-.form-group input {
+.form-group input, .payment-form .form-column input, .payment-form .form-row input {
     border-radius: 6px;
     border: 1px solid var(--gray-2);
     background: var(--color-secondary);
@@ -48,4 +49,109 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+
+/* Payment method */
+.payment-info .index {
+    margin: 8px 0 0 0;
+    color: var(--gray-4);
+}
+
+.payment-form {
+    border-radius: 6px;
+    background: var(--color-secondary-darker);
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.payment-option {
+    border-radius: 6px 6px 0 0;
+}
+
+.alternative-option {
+    border-radius: 0 0 6px 6px;
+}
+
+.payment-option, .alternative-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px;
+    background: #FFF;
+    border: 1px solid var(--gray-2);
+    overflow: hidden;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.payment-option:has(input[type="radio"]:checked) {
+  border-color: var(--color-blue);
+  background: #f3f6fb;
+}
+
+.alternative-option:has(input[type="radio"]:checked) {
+  border-color: var(--color-blue);
+  background: #f3f6fb;
+}
+
+.bank-icon-s {
+    height: 30px;
+    width: auto;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid var(--gray-2);
+    background: #FFF;
+}
+
+.bank-icon-m {
+    height: 30px;
+    width: auto;
+    margin-top: 7px;
+}
+
+.alternative-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.input-group {
+    flex: 1;
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-primary);
+    opacity: 0.7;
+    pointer-events: none; /
+}
+
+.input-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.payment-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 14px;
+    margin: 14px 0;
+}
+
+.remember-me {
+    margin-top: 24px;
+}
+
+.remember-me .form-row{
+    border-radius: var(--cornerRadius-base, 5px);
+    border: 1px solid var(--gray-2);
+    background: #FFF;
+    padding: 14px;
+    margin: 24px 0;
 }
