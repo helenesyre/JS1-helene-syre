@@ -4,7 +4,12 @@ async function fetchAndCreateProducts() {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-    const products = data.data.slice(5, 10);
+    const sortedByNewest = data.data.sort((a, b) => {
+      const dateA = new Date(a.released).getTime();
+      const dateB = new Date(b.released).getTime();
+      return dateB - dateA;
+    });
+    const products = sortedByNewest.slice(5, 10);
 
     products.forEach(game => {
         const gameHTML = document.createElement('div'); // oppretter div for hvert spill
