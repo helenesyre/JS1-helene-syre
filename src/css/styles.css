@@ -20,7 +20,7 @@ body {
   width: 100%;
 }
 
-.container, .newReleases {
+.container, .newReleases, .similarGames {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
@@ -184,6 +184,12 @@ h2 {
 .card-price, .card-price-discount, .card-price-original {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-price-product-page, .price-section .card-price-discount, .price-section .card-price-original {
+  margin: 0;
+  font-size: 2rem;
   font-weight: bold;
 }
 
