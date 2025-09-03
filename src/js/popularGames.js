@@ -13,7 +13,7 @@ async function fetchAndCreateProducts() {
     products = data.data.slice(0, 5);
 
     products.forEach(game => {
-        const gameHTML = document.createElement('div'); // oppretter div for hvert spill
+        const gameHTML = document.createElement('div');
         let priceHTML = `<p class="card-price">$${game.price}</p>`;
         if (game.onSale && game.discountedPrice) {
           priceHTML = `
