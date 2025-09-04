@@ -1,7 +1,5 @@
 /* Billing information */
-.billing-info {
-    margin-top: 28px;
-}
+
 
 .form-group input, .payment-form .form-column input, .payment-form .form-row input {
     border-radius: 6px;
