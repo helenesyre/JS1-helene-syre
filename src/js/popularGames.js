@@ -108,6 +108,7 @@ const addCartToMemory = () => {
 function addCartToHTML() {
     cartList.innerHTML = '';
     let totalQuantity = 0;
+    let totalPrice = 0;
     if(carts.length > 0) {
         carts.forEach((cart) => {
             totalQuantity = totalQuantity + cart.quantity;
@@ -116,30 +117,58 @@ function addCartToHTML() {
             newCart.dataset.id = cart.product_id;
             let positionProduct = products.findIndex((value) => value.id == cart.product_id);
             let info = products[positionProduct];
+            let itemTotal = info.onSale && info.discountedPrice
+                ? info.discountedPrice * cart.quantity
+                : info.price * cart.quantity;
+
+            totalPrice += itemTotal; 
+            
             newCart.innerHTML = `
-                <img class="test" src="${info.image.url}" alt="${info.image.alt}">
-                <div class="product-name">
-                    <h3>${info.title}</h3>
-                    <p>${info.genre}</p>
-                </div>
-
-                <div class="total-price">${info.price * cart.quantity}</div>
-
-                <div class="quantity">
-                    <span class="decrease">-</span>
-                    <span class="number">${cart.quantity}</span>
-                    <span class="increase">+</span>
-                </div>
-            `;
+                <div class="cart-info">
+                    <div class="cart-left">
+                      <img src="${info.image.url}" alt="${info.image.alt}">
+                      <div class="cart-details">
+                        <h3 class="title-xs">${info.title}</h3>
+                        <p class="index">Digital purchase</p>
+                        <div class="quantity">
+                            <span class="decrease">-</span>
+                            <span class="number">${cart.quantity}</span>
+                            <span class="increase">+</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                        <div class="cart-total">
+                            ${
+                                info.onSale && info.discountedPrice
+                                ? `
+                                    <p class="card-price-original">$${(info.price * cart.quantity).toFixed(2)}</p>
+                                    <p class="card-price-discount">$${(info.discountedPrice * cart.quantity).toFixed(2)}</p>
+                                    `
+                                : `<p class="card-price">$${(info.price * cart.quantity).toFixed(2)}</p>`
+                            }
+                        </div>
+               
+                    </div>
+                  </div>`;
             cartList.appendChild(newCart);
         });
+        const cartTotalDiv = document.getElementById("cartTotal");
+        cartTotalDiv.innerHTML = `
+            <div class="cart-total-label">
+                <span>Total:</span>
+                <span class="cart-total-price">$${totalPrice.toFixed(2)}</span>
+            </div>
+        `;
     }
     cartBadge.innerText = totalQuantity;
 }
+
 cartList.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains ('decrease') || positionClick.classList.contains ('increase')) {
-        let productId = positionClick.parentElement.parentElement.dataset.id;
+        let productId = positionClick.closest('.item').dataset.id;
         let type = 'decrease';
         if (positionClick.classList.contains ('increase')) {
             type = 'increase';
@@ -172,7 +201,5 @@ const changeQuantity = (product_id, type) => {
     addCartToMemory();
     addCartToHTML();
 };
-
-
 
 fetchAndCreateProducts();
