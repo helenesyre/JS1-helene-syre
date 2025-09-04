@@ -1,1 +1,117 @@
 @import url("./imports/forms.css");
+
+.checkout-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.checkout-form {
+    flex: 1.5;
+}
+
+.checkout-summary {
+    flex: 1;
+    border-radius: 6px;
+    padding: 16px;
+    height: fit-content;
+}
+
+.legal-links {
+    font-size: 1rem;
+    padding-top: 20px;
+    margin-top: 38px;
+    border-top: 1px solid var(--gray-2);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    color: var(--color-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--color-blue);
+    text-underline-offset: 5px;
+}
+
+.summary-info {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.summary-left {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.summary-left img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.summary-details p {
+    margin: 2px 0 8px 0;
+}
+
+.summary-quantity {
+
+}
+
+.summary-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.card-price {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.card-price-discount {
+    color: var(--color-blue);
+    font-size: 1.2rem;
+}
+
+
+.remove {
+    color: var(--delete);
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+.summary-totals  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+    border-top: 1px solid var(--gray-2);
+}
+
+.summary-totals p {
+    margin: 0;
+}
+
+.totals-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals-label, .totals-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.totals-value {
+    color: var(--color-blue);
+}
