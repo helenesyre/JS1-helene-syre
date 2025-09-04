@@ -7,6 +7,7 @@
 @import url("./imports/links.css");
 @import url("./imports/buttons.css");
 @import url("./imports/navigation.css");
+@import url("./imports/cart.css");
 @import url("./imports/footer.css");
 /*@import url("./imports/icons.css");*/
 
@@ -181,6 +182,7 @@ h2 {
   color: rgba(34, 34, 34, 0.7);
 }
 
+/* Card Price */
 .card-price, .card-price-discount, .card-price-original {
   margin: 0;
   font-size: 1.5rem;
@@ -191,6 +193,10 @@ h2 {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.summary-price {
+  
 }
 
 .card-price {
@@ -214,11 +220,6 @@ h2 {
 .card-price-discount {
   font-weight: bold;
   color: var(--color-orange);
-}
-
-.test {
-    width: 20px;
-    height: 20px;
 }
 
 /* Logo */
