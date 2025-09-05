@@ -146,8 +146,8 @@
     margin-top: 24px;
 }
 
-.remember-me .form-row{
-    border-radius: var(--cornerRadius-base, 5px);
+.remember-me .form-row {
+    border-radius: 6px;
     border: 1px solid var(--gray-2);
     background: #FFF;
     padding: 14px;
