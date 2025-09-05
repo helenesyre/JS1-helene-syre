@@ -14,7 +14,7 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 99px;
-	background-color: var(--color-vivid-purple);
+	background-color: var(--color-burgundy);
 	cursor: pointer;
     z-index: 4;
 }
@@ -107,7 +107,7 @@
 }
 
 .sidebar nav li:hover {
-  background-color: var(--color-purple);
+  background-color: var(--color-burgundy);
   color: var(--color-secondary);
 }
 
@@ -267,7 +267,7 @@
 
 .page:hover {
   text-decoration: underline;
-  color: var(--color-vivid-purple);
+  color: var(--color-burgundy);
 }
 
 .current-page {
