@@ -100,7 +100,6 @@
 .totals-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .totals-label, .totals-value {
