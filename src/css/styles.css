@@ -117,7 +117,7 @@ h2 {
   min-width: 0;
 }
 
-.featured-card h3,
+.featured-card h2,
 .featured-card p {
   color: var(--color-secondary);
   margin: 0;

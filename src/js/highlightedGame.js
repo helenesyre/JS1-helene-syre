@@ -16,7 +16,7 @@ async function fetchAndCreateHighlightedGame() {
                 <div class="hero-content">
                     <div class="card-information">
                         <p class="card-genre">${game.genre}</p>
-                        <h3 class="card-title">${game.title}</h3> 
+                        <h2 class="card-title">${game.title}</h2> 
                         <p>${game.description}</p>
                     </div>
                     <div class="hero-buttons">
