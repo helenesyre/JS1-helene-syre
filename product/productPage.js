@@ -1,13 +1,18 @@
 /* import '/quantitySelector.js'; Does not work */
 
+import { createGameCard, renderCart } from "../src/js/components.js";
+import useCart from "../src/js/useCart.js";
+import useFetch from "../src/js/useFetch.js";
+
+let quantity = 1;
+
 async function displayProductDetails() {
     const productContainer = document.getElementById('product-container');
     const gameHTML = document.createElement('div');
     try {
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('id');
-        const req = await fetch(`https://v2.api.noroff.dev/gamehub/${productId}`);
-        const game = await req.json();
+        const game = await useFetch(`/gamehub/${productId}`);
         let priceHTML = `<p class="card-price-product-page">$${game.data.price}</p>`;
         if (game.data.onSale && game.data.discountedPrice) {
           priceHTML = `
@@ -69,9 +74,9 @@ async function displayProductDetails() {
               <div class="quantity-selector">
                 <p>Quantity:</p>
                 <div class="quantity">
-                  <span><i class="fa-solid fa-minus decrease"></i></span>
-                  <span class="number">1</span>
-                  <span><i class="fa-solid fa-plus increase"></i></span>
+                  <span id="decrease"><i class="fa-solid fa-minus decrease"></i></span>
+                  <span id="quantity" class="number">${quantity}</span>
+                  <span id="increase"><i class="fa-solid fa-plus increase"></i></span>
                 </div>
               </div>
               
@@ -87,8 +92,45 @@ async function displayProductDetails() {
             </div>
           </div>
         `;
+
+        const decreaseButton = gameHTML.querySelector(`#decrease`);
+        const increaseButton = gameHTML.querySelector(`#increase`);
+        const quantityDisplay = gameHTML.querySelector(`#quantity`);
+
+        decreaseButton.addEventListener('click', () => {
+          if (quantity > 1) {
+            quantity -= 1;
+            quantityDisplay.textContent = quantity;
+          }
+        });
+
+        increaseButton.addEventListener('click', () => {
+          quantity += 1;
+          quantityDisplay.textContent = quantity;
+        });
+
+        const addToCartButton = gameHTML.querySelector('.add-cart');
+        addToCartButton.addEventListener('click', () => {
+            useCart.addItem(game.data, quantity);
+            renderCart();
+        });
+
         productContainer.appendChild(gameHTML);
 
+        const similarGames = document.querySelector(".similarGames");
+        
+        const response = await useFetch('/gamehub');
+        const currentGameGenre = game.data.genre;
+        const sortedByGenre = response.data.sort((a, b) => {
+            if (a.genre === currentGameGenre) return -1;
+            if (b.genre === currentGameGenre) return 1;
+            return a.genre.localeCompare(b.genre);
+        });
+        const products = sortedByGenre.slice(0, 5);
+
+        products.forEach(game => {
+            similarGames.appendChild(createGameCard(game));
+        });
     } catch (error) {
         console.error("Error fetching the product:", error);
     }

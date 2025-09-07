@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../src/css/styles.css" />
     <link rel="stylesheet" href="../src/css/product.css">
     <link rel="stylesheet" href="../src/css/media.css"/>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
     <!-- Google fonts -->
@@ -14,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- JavaScript -->
-    <script defer src="../product/similarGames.js"></script>
     <script defer src="../src/js/navigation.js"></script>
     <script type="module" src="../src/js/main.js"></script>
     <script type="module" src="../product/productPage.js"></script>
@@ -131,7 +131,6 @@
         </div>
         <main>
           <section id="product-container" class="main-content-margin">
-
           </section>
           <section class="main-content-margin">
             <h2>Similar games</h2>
@@ -143,10 +142,10 @@
               <h2>Your cart</h2>
             </div>
             <div class="cart-list" id="cartList"></div>
-            
+            <div class="cart-total" id="cartTotal"></div>
             <div class="cart-btns">
               <button class="close-btn">Close</button>
-              <button class="checkout-btn">Checkout</button>
+              <a href="/checkout/index.html" class="checkout-btn">Checkout</a>
             </div>
           </div>
         </main>

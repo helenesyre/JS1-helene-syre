@@ -69,6 +69,11 @@ body.show-cart .cart-tab {
   border-top: 1px solid var(--gray-2);
 }
 
+.cart-list {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
 /* Products */
 .cart-info {
   display: flex;

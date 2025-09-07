@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- JavaScript -->
-    <script defer src="../games/games.js"></script>
+    <script type="module" src="../games/games.js"></script>
     <script defer src="../src/js/navigation.js"></script>
     <script type="module" src="../src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/3965f66036.js" crossorigin="anonymous"></script>
@@ -148,10 +148,10 @@
               <h2>Your cart</h2>
             </div>
             <div class="cart-list" id="cartList"></div>
-            
+            <div class="cart-total" id="cartTotal"></div>
             <div class="cart-btns">
               <button class="close-btn">Close</button>
-              <button class="checkout-btn">Checkout</button>
+              <a href="/checkout/index.html" class="checkout-btn">Checkout</a>
             </div>
           </div>
         </main>

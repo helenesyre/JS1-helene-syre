@@ -1,10 +1,11 @@
+import useFetch from "./useFetch.js";
+
 const highlightedGame = document.querySelector(".highlightedGame");
 
 async function fetchAndCreateHighlightedGame() {
   try {
-    const response = await fetch(`${API_URL}/2bbaab8b-57b0-47f6-ab8d-8d443ac767da`);
-    const data = await response.json();
-    const game = data.data;
+    const response = await useFetch(`/gamehub/2bbaab8b-57b0-47f6-ab8d-8d443ac767da`);
+    const game = response.data;
 
     const gameHTML = document.createElement('a'); // oppretter div for hvert spill
 
@@ -20,7 +21,7 @@ async function fetchAndCreateHighlightedGame() {
                         <p>${game.description}</p>
                     </div>
                     <div class="hero-buttons">
-                        <a class="cta-l cta-color-orange add-cart" href="/product/${game.id}/">
+                        <a class="cta-l cta-color-orange add-cart" href="/product/?id=${game.id}/">
                             <span>Buy now</span>
                             <svg role="img" class="icon-s" aria-label="Cart" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
@@ -33,7 +34,7 @@ async function fetchAndCreateHighlightedGame() {
                                 </g>
                             </svg>
                         </a>
-                        <a class="cta-l cta-border-color-orange" href="/product/${game.id}/">
+                        <a class="cta-l cta-border-color-orange" href="/product/?id=${game.id}/">
                             <span>Read More</span>
                         </a>
                         <div class="icon-background">
@@ -44,6 +45,13 @@ async function fetchAndCreateHighlightedGame() {
                     </div>
                 </div>
             </div>`;
+
+    const addToCartButton = gameHTML.querySelector('.add-cart');
+    addToCartButton.addEventListener('click', () => {
+        useCart.addItem(game);
+        renderCart();
+    });
+
     highlightedGame.appendChild(gameHTML);
   } catch (error) {
     console.error("Error fetching products:", error);
