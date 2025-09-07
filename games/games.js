@@ -22,12 +22,12 @@ async function fetchAndCreateProducts() {
 
         gameHTML.innerHTML = `
             <div class="card" data-genre="${game.genre}">
-                <a href="product/?id=${game.id}">
+                <a href="/product/?id=${game.id}">
                     <img class="#" src="${game.image.url}" alt="${game.image.alt}">
                 </a>
                     <div class="card-content">
                         <div class="card-top">
-                            <a href="product/?id=${game.id}">
+                            <a href="/product/?id=${game.id}">
                                 <div class="card-info">
                                     <h3 class="card-title">${game.title}</h3> 
                                     <p class="card-genre">${game.genre}</p>
@@ -37,10 +37,10 @@ async function fetchAndCreateProducts() {
                                 <path d="M21.31,9.62c0-2.56-2.13-4.64-4.77-4.64-1.97,0-3.66,1.16-4.39,2.82-.73-1.66-2.42-2.82-4.39-2.82-2.63,0-4.77,2.08-4.77,4.64,0,7.44,9.15,12.36,9.15,12.36,0,0,9.15-4.92,9.15-12.36Z" style="fill: none; stroke: #520e35; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.31px;"/>
                             </svg>
                         </div>
-
+    
                         <div class="card-bottom" data-id="${game.id}">
 
-                            <a href="product/?id=${game.id}">
+                            <a href="/product/?id=${game.id}">
                                 ${priceHTML}
                             </a>
                             <div class="cta-md cta-color-orange add-cart">
@@ -66,6 +66,8 @@ async function fetchAndCreateProducts() {
     console.error("Error fetching products:", error);
   }
 }
+
+/* Code inspired by https://www.youtube.com/watch?v=RKfMtCNx1z0 */
 
 const buttons = document.querySelectorAll('.filter-buttons button');
 

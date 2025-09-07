@@ -22,7 +22,7 @@ async function displayProductDetails() {
           <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
               <li><a href="../index.html" class="page">Home</a></li>
-              <li><a href="../games.html" class="page">Games</a></li>
+              <li><a href="../games/index.html" class="page">Games</a></li>
               <li><span aria-current="page" class="current-page">${game.data.title}</span></li>
             </ol>
           </nav>
@@ -67,19 +67,11 @@ async function displayProductDetails() {
               </div>
 
               <div class="quantity-selector">
-                <label for="quantity" class="quantity-label">Quantity:</label>
-                <div class="quantity-controls">
-                  <button class="qty-count btn-minus" data-action="minus" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                    </svg>
-                  </button>
-                  <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
-                  <button class="qty-count btn-plus" data-action="add" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                  </button>
+                <p>Quantity:</p>
+                <div class="quantity">
+                  <span><i class="fa-solid fa-minus decrease"></i></span>
+                  <span class="number">1</span>
+                  <span><i class="fa-solid fa-plus increase"></i></span>
                 </div>
               </div>
               

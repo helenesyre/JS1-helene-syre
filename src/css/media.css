@@ -27,8 +27,11 @@
         margin-right: 0;
     }
 
+    /* Product Page */
+    .game-image {
+        max-height: 600px;
+    }
 
-    /* Checkout */
     /* Checkout */
     .checkout-container {
         max-width: 700px;
@@ -60,6 +63,19 @@
         width: 24px;
     }
 
+    /* Product Page */
+    .product-page {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 75px;
+        gap: 96px;
+    }
+
+    .game-image {
+        max-width: 500px;
+        max-height: none;
+    }
+
     /* Checkout */
     .billing-info {
         margin-top: 28px;
@@ -68,6 +84,6 @@
     .checkout-container {
         flex-direction: row;
         gap: 50px;
-        max-width: 100%;
+        min-width: 100%;
     }
 }

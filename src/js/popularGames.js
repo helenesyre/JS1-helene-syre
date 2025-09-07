@@ -131,9 +131,9 @@ function addCartToHTML() {
                         <h3 class="title-xs">${info.title}</h3>
                         <p class="index">Digital purchase</p>
                         <div class="quantity">
-                            <span class="decrease">-</span>
+                            <span><i class="fa-solid fa-minus decrease"></i></span>
                             <span class="number">${cart.quantity}</span>
-                            <span class="increase">+</span>
+                            <span><i class="fa-solid fa-plus increase"></i></span>
                         </div>
                       </div>
                     </div>
