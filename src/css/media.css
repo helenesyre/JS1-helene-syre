@@ -86,7 +86,7 @@
         margin-top: 28px;
     }
 
-    .checkout-container {
+    div.checkout-container {
         flex-direction: row;
         gap: 50px;
         min-width: 100%;
