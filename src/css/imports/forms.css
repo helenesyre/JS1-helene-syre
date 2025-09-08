@@ -1,6 +1,4 @@
 /* Billing information */
-
-
 .form-group input, .payment-form .form-column input, .payment-form .form-row input {
     border-radius: 6px;
     border: 1px solid var(--gray-2);
@@ -142,6 +140,11 @@
     margin: 14px 0;
 }
 
+/* hidden state */
+.payment-card-details.hidden {
+    display: none;
+}
+
 .remember-me {
     margin-top: 24px;
 }
@@ -152,4 +155,9 @@
     background: #FFF;
     padding: 14px;
     margin: 24px 0;
+}
+
+/* Error */
+.input-error {
+  border-color: red;
 }
