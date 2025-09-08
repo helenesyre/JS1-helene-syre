@@ -1,5 +1,9 @@
 /* iPad/tablet */
 @media (min-width: 840px) {
+
+    .container, .newReleases, .similarGames {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
     /* Navbar */
     .menu-toggle {
         display: none;
@@ -25,6 +29,7 @@
     .search-bar {
         width: 370px;
         margin-right: 0;
+        margin: 0 40px 0 0;
     }
 
     /* Product Page */

@@ -73,7 +73,7 @@
 
 .original-price {
     font-size: 2rem;
-    color: var(--gray-3);
+    color: var(--gray-4);
     text-decoration: line-through;
 }
 /* Quantity selector */

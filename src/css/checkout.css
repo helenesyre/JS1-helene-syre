@@ -1,5 +1,4 @@
 @import url("./imports/forms.css");
-
 .checkout-container {
     display: flex;
     flex-direction: column-reverse;
@@ -10,6 +9,7 @@
 .checkout-form, .confirmation {
     flex: 1.5;
 }
+
 
 .confirmation {
     margin-top: 28px;

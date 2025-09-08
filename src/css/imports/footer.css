@@ -14,14 +14,16 @@ footer {
 
 .footer-col {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .footer-col ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     list-style: none;
@@ -32,6 +34,7 @@ footer {
 .footer-col ul li a {
     color: #ccc;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .footer-col ul li a:hover,
