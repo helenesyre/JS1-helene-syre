@@ -50,9 +50,7 @@ function renderConfirmation() {
     // If the cart is empty, display a message or take appropriate action
     checkoutContainer.innerHTML = '<p>Your cart is empty</p>';
     const buyNowButton = document.getElementById('buyNowButton');
-    const buyNowLink = document.getElementById('buyNowLink');
     buyNowButton.disabled = true;
-    buyNowLink.href = '#';
   }
 
   const continueShoppingButton = document.getElementById('continueShoppingButton');

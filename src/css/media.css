@@ -69,7 +69,7 @@
     }
 
     /* Product Page */
-    .product-page {
+    div.product-page {
         flex-direction: row;
         align-items: center;
         margin-bottom: 75px;

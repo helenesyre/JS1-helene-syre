@@ -7,16 +7,22 @@ renderCheckout();
  * Toggle visibility of the credit/debit card fields
  * based on the selected payment option.
  */
-
 const cardRadio = document.getElementById('payment-card');
 const neoRadio = document.getElementById('payment-neopay');
 const cardDetails = document.querySelector('.payment-card-details');
+const cardInputs = cardDetails.querySelectorAll('input');
 
 function toggleCardDetails() {
   if (cardRadio.checked) {
     cardDetails.style.display = 'flex'; // keep flex layout
+    
+    // Make card inputs required
+    cardInputs.forEach(input => input.setAttribute('required', ''));
   } else {
     cardDetails.style.display = 'none';
+
+    // Remove required when not using card
+    cardInputs.forEach(input => input.removeAttribute('required'));
   }
 }
 
@@ -26,6 +32,7 @@ toggleCardDetails();
 // Listen for changes
 cardRadio.addEventListener('change', toggleCardDetails);
 neoRadio.addEventListener('change', toggleCardDetails);
+
 
 // Email validation
 const emailInput = document.getElementById('email');

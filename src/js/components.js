@@ -14,12 +14,12 @@ export function createGameCard(game) {
 
     gameCard.innerHTML = `
         <div class="card" data-genre="${game.genre}">
-            <a href="/product/?id=${game.id}">
-                <img class="#" src="${game.image.url}" alt="${game.image.alt}">
+            <a href="${import.meta.env.BASE_URL}/product/?id=${game.id}">
+                <img src="${game.image.url}" alt="${game.title}">
             </a>
                 <div class="card-content">
                     <div class="card-top">
-                        <a href="/product/?id=${game.id}">
+                        <a href="${import.meta.env.BASE_URL}/product/?id=${game.id}">
                             <div class="card-info">
                                 <h3 class="card-title">${game.title}</h3> 
                                 <p class="card-genre">${game.genre}</p>
@@ -32,7 +32,7 @@ export function createGameCard(game) {
 
                     <div class="card-bottom" data-id="${game.id}">
 
-                        <a href="/product/?id=${game.id}">
+                        <a href="${import.meta.env.BASE_URL}/product/?id=${game.id}">
                             ${priceHTML}
                         </a>
                         <div class="cta-md cta-color-orange add-cart">
@@ -215,8 +215,6 @@ export function renderCheckout() {
     // If the cart is empty, display a message or take appropriate action
     checkoutContainer.innerHTML = '<p>Your cart is empty</p>';
     const buyNowButton = document.getElementById('buyNowButton');
-    const buyNowLink = document.getElementById('buyNowLink');
     buyNowButton.disabled = true;
-    buyNowLink.href = '#';
   }
 }

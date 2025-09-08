@@ -83,6 +83,8 @@ h2 {
   overflow: hidden;
   margin: 28px 0 80px 0;
   height: 410px;
+  background: black;
+  border-radius: 20px;
 }
 
 .card-information {

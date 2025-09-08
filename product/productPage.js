@@ -26,8 +26,8 @@ async function displayProductDetails() {
         gameHTML.innerHTML = `
           <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
-              <li><a href="../index.html" class="page">Home</a></li>
-              <li><a href="../games/index.html" class="page">Games</a></li>
+              <li><a href="${import.meta.env.BASE_URL}/" class="page">Home</a></li>
+              <li><a href="${import.meta.env.BASE_URL}/games/" class="page">Games</a></li>
               <li><span aria-current="page" class="current-page">${game.data.title}</span></li>
             </ol>
           </nav>

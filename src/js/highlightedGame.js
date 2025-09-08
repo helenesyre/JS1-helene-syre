@@ -9,7 +9,7 @@ async function fetchAndCreateHighlightedGame() {
 
     const gameHTML = document.createElement('a'); // oppretter div for hvert spill
 
-    gameHTML.href = `/product/?id=${game.id}`;
+    gameHTML.href = `${import.meta.env.BASE_URL}/product/?id=${game.id}`;
 
     gameHTML.innerHTML = `
             <div class="featured-card">
@@ -21,7 +21,7 @@ async function fetchAndCreateHighlightedGame() {
                         <p>${game.description}</p>
                     </div>
                     <div class="hero-buttons">
-                        <a class="cta-l cta-color-orange add-cart" href="/product/?id=${game.id}/">
+                        <a class="cta-l cta-color-orange add-cart" href="${import.meta.env.BASE_URL}/product/?id=${game.id}/">
                             <span>Buy now</span>
                             <svg role="img" class="icon-s" aria-label="Cart" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs>
@@ -34,7 +34,7 @@ async function fetchAndCreateHighlightedGame() {
                                 </g>
                             </svg>
                         </a>
-                        <a class="cta-l cta-border-color-orange" href="/product/?id=${game.id}/">
+                        <a class="cta-l cta-border-color-orange" href="${import.meta.env.BASE_URL}/product/?id=${game.id}/">
                             <span>Read More</span>
                         </a>
                         <div class="icon-background">
