@@ -14,7 +14,7 @@ const cardInputs = cardDetails.querySelectorAll('input');
 
 function toggleCardDetails() {
   if (cardRadio.checked) {
-    cardDetails.style.display = 'flex'; // keep flex layout
+    cardDetails.style.display = 'flex'; // Keep flex layout
     
     // Make card inputs required
     cardInputs.forEach(input => input.setAttribute('required', ''));

@@ -1,5 +1,9 @@
+// Import the custom useCart module to access cart functionality
 import useCart from "../../src/js/useCart.js";
 
+/**
+ * Render the confirmation summary of the cart on the confirmation page
+ */
 function renderConfirmation() {
   const confirmationContainer = document.querySelector('#confirmation-summary');
   const cartItems = useCart.getItems();

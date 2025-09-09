@@ -7,7 +7,7 @@ async function fetchAndCreateHighlightedGame() {
     const response = await useFetch(`/gamehub/2bbaab8b-57b0-47f6-ab8d-8d443ac767da`);
     const game = response.data;
 
-    const gameHTML = document.createElement('a'); // oppretter div for hvert spill
+    const gameHTML = document.createElement('a'); // Makes an <a> for each game
 
     gameHTML.href = `${import.meta.env.BASE_URL}/product/?id=${game.id}`;
 

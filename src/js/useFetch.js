@@ -1,3 +1,4 @@
+// Base URL for the API
 const API_URL = 'https://v2.api.noroff.dev';
 
 async function useFetch(url, options = {}) {
@@ -13,4 +14,5 @@ async function useFetch(url, options = {}) {
   }
 }
 
+// Export the function so it can be imported in other modules
 export default useFetch;

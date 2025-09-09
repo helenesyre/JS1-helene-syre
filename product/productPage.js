@@ -1,6 +1,5 @@
-/* import '/quantitySelector.js'; Does not work */
-
 import { createGameCard, renderCart } from "../src/js/components.js";
+// Import the custom useCart module to access cart functionality
 import useCart from "../src/js/useCart.js";
 import useFetch from "../src/js/useFetch.js";
 

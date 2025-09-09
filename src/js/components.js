@@ -1,7 +1,8 @@
+// Import the custom useCart module to access cart functionality
 import useCart from "./useCart.js";
 
 export function createGameCard(game) {
-    const gameCard = document.createElement('div'); // oppretter div for hvert spill
+    const gameCard = document.createElement('div'); // Makes a <div> for each game
 
     let priceHTML = `<p class="card-price">$${game.price}</p>`;
     if (game.onSale && game.discountedPrice) {
