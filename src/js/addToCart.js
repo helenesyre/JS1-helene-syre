@@ -1,7 +1,6 @@
 let iconCart = document.querySelector(".icon-cart");
 let closeCart = document.querySelector(".close-btn");
-let body = document.querySelector("body");
-let productSectionHTML = document.querySelector("#products-section");
+let body = document.querySelector("body");Ç
 
 
 export function addCartEventListener() {
@@ -12,13 +11,4 @@ export function addCartEventListener() {
     closeCart.addEventListener("click", () => {
         body.classList.remove("show-cart");
     });
-    /*
-    productSectionHTML.addEventListener('click', (event) => {
-        const clickedButton = event.target.closest(".add-cart");
-        if (clickedButton) {
-            alert('1');
-            console.log("clicked");
-        }
-    });
-    */
 }
