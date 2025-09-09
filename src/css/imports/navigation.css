@@ -106,6 +106,10 @@
   border-radius: 5px;
 }
 
+.sidebar nav li:hover a {
+  color: var(--color-secondary);
+}
+
 .sidebar nav li:hover {
   background-color: var(--color-burgundy);
   color: var(--color-secondary);
@@ -137,6 +141,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.nav-item svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item span {
+  margin: 4px 0 0 12px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Header nav */
