@@ -137,7 +137,7 @@
             <section class="checkout-form">
               <form id="checkout-form" action="confirmation/" method="GET">
                 <div class="billing-info">
-                <h2 class="title-m">Billing information</h2>
+                  <h2 class="title-m">Billing information</h2>
                   <div class="form-group">
                     <div class="form-row">
                       <div class="form-column">
@@ -180,71 +180,72 @@
                       <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" autocomplete="off" required>
                     </div>
                   </div>
+                </div>
 
-                  <div class="payment-info">
-                    <h2 class="title-m">Payment information</h2>
-                    <p class="index" >All transactions are secure and encrypted</p>
+                <div class="payment-info">
+                  <h2 class="title-m">Payment information</h2>
+                  <p class="index" >All transactions are secure and encrypted</p>
 
-                    <div class="payment-form">
-                      <label class="payment-option">
-                        <span>
-                          <input type="radio" id="payment-card" name="payment" value="card" checked>
-                          Credit or debit card
-                        </span>
-                        <span class="card-icons">
-                          <img class="bank-icon-s" src="../assets/images/ntb.png" alt="NTB">
-                          <img class="bank-icon-s" src="../assets/images/payquick.png" alt="Payquick">
-                          <img class="bank-icon-s" src="../assets/images/payswift.png" alt="PaySwift">
-                        </span>
-                      </label>
+                  <div class="payment-form">
+                    <label class="payment-option">
+                      <span>
+                        <input type="radio" id="payment-card" name="payment" value="card" checked>
+                        Credit or debit card
+                      </span>
+                      <span class="card-icons">
+                        <img class="bank-icon-s" src="../assets/images/ntb.png" alt="NTB">
+                        <img class="bank-icon-s" src="../assets/images/payquick.png" alt="Payquick">
+                        <img class="bank-icon-s" src="../assets/images/payswift.png" alt="PaySwift">
+                      </span>
+                    </label>
 
-                      <div class="payment-card-details">
-                        <div class="form-column">
-                          <label for="card-number" class="sr-only">Card number</label>
-                          <input type="text" id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456">
-                        </div>
-
-                        <div class="form-row">
-                          <div class="input-group">
-                            <label for="expiry" class="sr-only">Expiration date</label>
-                            <input type="text" id="expiry" name="expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY">
-                          </div>
-                          <div class="input-group">
-                            <label for="cvc" class="sr-only">Security code</label>
-                            <input type="password" id="cvc" name="cvc" inputmode="numeric" autocomplete="off" placeholder="CVC">
-                            <span class="input-icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-
-                        <div class="form-column">
-                          <label for="card-name" class="sr-only">Name on card</label>
-                          <input type="text" id="card-name" name="card-name" autocomplete="cc-name" placeholder="Name on card">
-                        </div>
+                    <div class="payment-card-details">
+                      <div class="form-column">
+                        <label for="card-number" class="sr-only">Card number</label>
+                        <input type="text" id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456">
                       </div>
 
-                      <label class="alternative-option">
-                        <span>
-                          <input type="radio" id="payment-neopay" name="payment" value="neopay">
-                          Neopay
-                        </span>
-                        <img class="bank-icon-m" src="../assets/images/neopay.png" alt="NeoPay">
-                      </label>
-                    </div>
-
-                    <div class="remember-me">
-                      <h3 class="title-s">Remember me</h3>
                       <div class="form-row">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1">Save my information for a faster checkout</label>
+                        <div class="input-group">
+                          <label for="expiry" class="sr-only">Expiration date</label>
+                          <input type="text" id="expiry" name="expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY">
+                        </div>
+                        <div class="input-group">
+                          <label for="cvc" class="sr-only">Security code</label>
+                          <input type="password" id="cvc" name="cvc" inputmode="numeric" autocomplete="off" placeholder="CVC">
+                          <span class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="form-column">
+                        <label for="card-name" class="sr-only">Name on card</label>
+                        <input type="text" id="card-name" name="card-name" autocomplete="cc-name" placeholder="Name on card">
                       </div>
                     </div>
 
-                    <button type="submit" id="buyNowButton" class="cta-xl-full cta-color-blue">Buy now</button>
+                    <label class="alternative-option">
+                      <span>
+                        <input type="radio" id="payment-neopay" name="payment" value="neopay">
+                        Neopay
+                      </span>
+                      <img class="bank-icon-m" src="../assets/images/neopay.png" alt="NeoPay">
+                    </label>
                   </div>
+
+                  <div class="remember-me">
+                    <h3 class="title-s">Remember me</h3>
+                    <div class="form-row">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1">Save my information for a faster checkout</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" id="buyNowButton" class="cta-xl-full cta-color-blue">Buy now</button>
+                </div>
               </form>
 
               <div class="legal-links">
