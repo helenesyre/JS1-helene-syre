@@ -144,8 +144,9 @@
     justify-content: space-between;
 }
 
-.help-contact button {
+.help-contact #continueShoppingButton p {
     width: 250px;
+    margin: 0;
 }
 
 .help-text {
