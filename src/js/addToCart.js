@@ -1,6 +1,6 @@
 let iconCart = document.querySelector(".icon-cart");
 let closeCart = document.querySelector(".close-btn");
-let body = document.querySelector("body");Ç
+let body = document.querySelector("body");
 
 
 export function addCartEventListener() {
