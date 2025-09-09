@@ -101,63 +101,61 @@
           </nav>
         </aside>
       </div>
-
-      <section class="main-content">
-        <div class="main-content-margin header-bar">
-          <form class="search-bar" id="search-bar">
-            <label for="search-input" class="sr-only">Search input</label>
-            <input type="text" class="search-input" id="search-input" name="search" placeholder="Search for a game..." />
-            <button type="submit" class="search-bar-button" aria-label="Search">
-              <svg class="icon-m search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-            </button>
-          </form>
-          <div class="header-actions">
-            <svg role="img" class="icon-m" aria-label="Cart icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
-            </svg>
-
-            <div class="icon-cart">
-              <svg role="img" class="icon-m" aria-label="Cart icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-              <span class="cart-badge" id="cart-badge">0</span>
-            </div>
-
-            <div class="profile-icon">
-              <img src="assets/images/profile.jpg" alt="Profile photo">
-            </div>
-
-          </div>
-        </div>
+      <div class="main-content">
         <main>
-          <div class="main-content-margin" id="products-section">
-            <h1>Welcome to Gamehub!</h1>
-            <div class="highlightedGame" id="highlightedGame"></div>
-            <h2>Popular Games</h2>
-            <div id="container" class="container"></div>
-            <h2>New releases</h2>
-            <div id="newReleases" class="newReleases"></div>
-          </div>
+          <div class="main-content-margin header-bar">
+            <form class="search-bar" id="search-bar">
+              <label for="search-input" class="sr-only">Search input</label>
+              <input type="text" class="search-input" id="search-input" name="search" placeholder="Search for a game..." />
+              <button type="submit" class="search-bar-button" aria-label="Search">
+                <svg class="icon-m search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+              </button>
+            </form>
+            <div class="header-actions">
+              <svg role="img" class="icon-m" aria-label="Cart icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+              </svg>
 
-          <div class="cart-tab">
-            <div class="cart-header">
-              <h2>Your cart</h2>
-            </div>
-            <div class="cart-list" id="cartList"></div>
-            <div class="cart-total" id="cartTotal"></div>
-            <div class="cart-btns">
-              <button class="close-btn">Close</button>
-              <a href="./checkout/" class="checkout-btn">Checkout</a>
+              <div class="icon-cart">
+                <svg role="img" class="icon-m" aria-label="Cart icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <span class="cart-badge" id="cart-badge">0</span>
+              </div>
+
+              <div class="profile-icon">
+                <img src="assets/images/profile.jpg" alt="Profile photo">
+              </div>
+
             </div>
           </div>
+          <div>
+            <div class="main-content-margin" id="products-section">
+              <h1>Welcome to Gamehub!</h1>
+              <div class="highlightedGame" id="highlightedGame"></div>
+              <h2>Popular Games</h2>
+              <div id="container" class="container"></div>
+              <h2>New releases</h2>
+              <div id="newReleases" class="newReleases"></div>
+            </div>
 
+            <div class="cart-tab">
+              <div class="cart-header">
+                <h2>Your cart</h2>
+              </div>
+              <div class="cart-list" id="cartList"></div>
+              <div class="cart-total" id="cartTotal"></div>
+              <div class="cart-btns">
+                <button class="close-btn">Close</button>
+                <a href="./checkout/" class="checkout-btn">Checkout</a>
+              </div>
+            </div>
+          </div>
         </main>
-
-        <footer>
+        <footer class="footer">
           <div class="footer-container">
-            
             <a href="./">
               <svg role="img" class="logo logo-two-part-style2" aria-label="Gamehub logo" width="100%" height="100%" viewBox="0 0 178 34" xmlns="http://www.w3.org/2000/svg">
                 <path d="M177.03,7.02c-4.35,1.47-5.55,2.66-7.02,7.02-1.47-4.35-2.66-5.55-7.02-7.02,4.35-1.47,5.55-2.66,7.02-7.02,1.47,4.35,2.66,5.55,7.02,7.02Z" style="fill: var(--color-2)"/>
@@ -199,7 +197,6 @@
             </div>
           </div>
 
-
           <div class="footer-bottom">
             <p class="footer-copy">
               ©2025 Gamehub. All rights reserved.
@@ -213,7 +210,6 @@
           </div>
 
         </footer>
-      </section>
-
+      </div>
   </body>
 </html>
