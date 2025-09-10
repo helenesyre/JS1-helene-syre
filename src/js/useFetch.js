@@ -1,3 +1,5 @@
+import { showToast } from "./toast.js";
+
 // Base URL for the API
 const API_URL = 'https://v2.api.noroff.dev';
 
@@ -9,7 +11,7 @@ async function useFetch(url, options = {}) {
     }
     return await response.json();
   } catch (error) {
-    console.error('Fetch error:', error);
+    showToast('Error fetching data. Please try again later.');
     throw error;
   }
 }

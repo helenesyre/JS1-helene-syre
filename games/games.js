@@ -1,14 +1,13 @@
 import { createGameCard } from "../src/js/components.js";
+import useFetch from "../src/js/useFetch.js";
 
 const container = document.querySelector(".container");
-const API_URL = "https://v2.api.noroff.dev/gamehub";
 
 async function fetchAndCreateProducts() {
   try {
-    const response = await fetch(API_URL);
-    const data = await response.json();
+    const data = await useFetch("/gamehub");
     const products = data.data;
-
+    container.innerHTML = '';
     products.forEach(game => {
         container.appendChild(createGameCard(game));
     });

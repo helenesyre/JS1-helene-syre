@@ -10,6 +10,7 @@ async function fetchAndCreateProducts() {
     const response = await useFetch("/gamehub");
     products = response.data.slice(0, 5);
 
+    container.innerHTML = '';
     products.forEach(game => {
         container.appendChild(createGameCard(game));
     });

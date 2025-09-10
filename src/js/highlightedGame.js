@@ -51,7 +51,7 @@ async function fetchAndCreateHighlightedGame() {
         useCart.addItem(game);
         renderCart();
     });
-
+    highlightedGame.innerHTML = '';
     highlightedGame.appendChild(gameHTML);
   } catch (error) {
     console.error("Error fetching products:", error);

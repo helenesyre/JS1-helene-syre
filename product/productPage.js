@@ -12,6 +12,18 @@ async function displayProductDetails() {
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('id');
         const game = await useFetch(`/gamehub/${productId}`);
+        
+        // Update title + meta tags
+        document.title = `GameHub | Buy ${game.data.title} today`;
+
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.setAttribute(
+            "content",
+            `Buy ${game.data.title} at GameHub. ${game.data.description || "Instant digital download available."}`
+          );
+        }
+
         let priceHTML = `<p class="card-price-product-page">$${game.data.price}</p>`;
         if (game.data.onSale && game.data.discountedPrice) {
           priceHTML = `
@@ -113,7 +125,7 @@ async function displayProductDetails() {
             useCart.addItem(game.data, quantity);
             renderCart();
         });
-
+        productContainer.innerHTML = ''; // Clear any existing content
         productContainer.appendChild(gameHTML);
 
         const similarGames = document.querySelector(".similarGames");
@@ -126,7 +138,7 @@ async function displayProductDetails() {
             return a.genre.localeCompare(b.genre);
         });
         const products = sortedByGenre.slice(0, 5);
-
+        similarGames.innerHTML = '';
         products.forEach(game => {
             similarGames.appendChild(createGameCard(game));
         });

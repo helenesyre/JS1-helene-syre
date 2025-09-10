@@ -221,6 +221,7 @@
 /* Cart icon */
 .icon-cart {
   position: relative;
+  cursor: pointer;
 }
 
 .icon-cart span {
