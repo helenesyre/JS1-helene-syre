@@ -1,8 +1,8 @@
 /* Billing information */
 .form-group input, .payment-form .form-column input, .payment-form .form-row input {
     border-radius: 6px;
-    border: 1px solid var(--gray-2);
-    background: var(--color-secondary);
+    border: 1px solid var(--gray-1, #D9D9D9);
+    background: var(--color-secondary, #FAF9F6);
     display: flex;
     width: 100%;
     padding: 16px;
@@ -13,16 +13,16 @@
 .form-group input::placeholder {
     font-size: 14px;
     font-weight: 400;
-    color: var(--color-primary);
+    color: var(--color-primary, #222222);
     opacity: 0.7;
 }
 
 .form-group input:focus {
-    outline: 2px solid var(--color-blue);
+    outline: 2px solid var(--color-blue, #3045E1);
 }
 
 .form-group label {
-    color: var(--color-primary);
+    color: var(--color-primary, #222222);
 }
 
 .form-group {
@@ -50,12 +50,12 @@
 /* Payment method */
 .payment-info .index {
     margin: 8px 0 0 0;
-    color: var(--gray-4);
+    color: var(--gray-2, #595D62);
 }
 
 .payment-form {
     border-radius: 6px;
-    background: var(--color-secondary-darker);
+    background: var(--color-secondary-darker, #EFEEED);
     margin-top: 24px;
     overflow: hidden;
 }
@@ -75,19 +75,19 @@
     justify-content: space-between;
     gap: 16px;
     padding: 14px;
-    background: #FFF;
-    border: 1px solid var(--gray-2);
+    background: var(--white, #ffffff);
+    border: 1px solid var(--gray-1, #D9D9D9);
     overflow: hidden;
     transition: border-color 0.2s, background 0.2s;
 }
 
 .payment-option:has(input[type="radio"]:checked) {
-  border-color: var(--color-blue);
+  border-color: var(--color-blue, #3045E1);
   background: #f3f6fb;
 }
 
 .alternative-option:has(input[type="radio"]:checked) {
-  border-color: var(--color-blue);
+  border-color: var(--color-blue, #3045E1);
   background: #f3f6fb;
 }
 
@@ -96,8 +96,8 @@
     width: auto;
     padding: 8px;
     border-radius: 3px;
-    border: 1px solid var(--gray-2);
-    background: #FFF;
+    border: 1px solid var(--gray-1, #D9D9D9);
+    background: var(--white, #ffffff);
 }
 
 .bank-icon-m {
@@ -122,7 +122,7 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--color-primary);
+    color: var(--color-primary, #222222);
     opacity: 0.7;
     pointer-events: none; 
 }
@@ -151,8 +151,8 @@
 
 .remember-me .form-row {
     border-radius: 6px;
-    border: 1px solid var(--gray-2);
-    background: #FFF;
+    border: 1px solid var(--gray-1, #D9D9D9);
+    background: var(--white, #ffffff);
     padding: 14px;
     margin: 24px 0;
 }

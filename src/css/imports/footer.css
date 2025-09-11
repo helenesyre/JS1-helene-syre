@@ -1,7 +1,7 @@
 /* Footer */
 footer {
-    background: var(--color-primary);
-    color: var(--color-secondary);
+    background: var(--color-primary, #222222);
+    color: var(--color-secondary, #FAF9F6);
     padding: 2rem;
     margin-top: auto;
 }
@@ -40,7 +40,7 @@ footer {
 
 .footer-col ul li a:hover,
 .footer-terms a:hover {
-    color: #fff;
+    color: var(--white, #ffffff);
 }
 
 .social-links i {
@@ -48,7 +48,7 @@ footer {
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-secondary, #FAF9F6);
     padding-top: 20px;
     margin-top: 28px;
     display: flex;
@@ -65,6 +65,6 @@ footer {
 }
 
 .footer-terms a {
-    color: var(--color-secondary);
+    color: var(--color-secondary, #FAF9F6);
     text-decoration: none;
 }

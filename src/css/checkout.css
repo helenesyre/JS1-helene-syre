@@ -32,13 +32,13 @@
     font-size: 1rem;
     padding-top: 20px;
     margin-top: 38px;
-    border-top: 1px solid var(--gray-2);
+    border-top: 1px solid var(--gray-1, #D9D9D9);
     display: flex;
     flex-direction: row;
     gap: 16px;
-    color: var(--color-blue);
+    color: var(--color-blue, #3045E1);
     text-decoration: underline;
-    text-decoration-color: var(--color-blue);
+    text-decoration-color: var(--color-blue, #3045E1);
     text-underline-offset: 5px;
 }
 
@@ -78,19 +78,18 @@
 }
 
 .card-price {
-    color: var(--color-primary);
+    color: var(--color-primary, #222222);
     font-size: 1.2rem;
 }
 
 .card-price-discount {
-    color: var(--color-blue);
+    color: var(--color-blue, #3045E1);
     font-size: 1.2rem;
 }
 
-
 .remove {
     cursor: pointer;
-    color: var(--delete);
+    color: var(--alert, #960000);
     position: absolute;
     top: -12px;
     right: -12px;
@@ -101,7 +100,7 @@
     flex-direction: column;
     gap: 8px;
     padding-top: 40px;
-    border-top: 1px solid var(--gray-2);
+    border-top: 1px solid var(--gray-1, #D9D9D9);
 }
 
 .summary-totals p {
@@ -120,21 +119,21 @@
 }
 
 .totals-value {
-    color: var(--color-blue);
+    color: var(--color-blue, #3045E1);
 }
 
 /* Confirm page */
 .order-confirmation{
     border-radius: 6px;
-    border: 1px solid var(--gray-2);
-    background: #FFF;
+    border: 1px solid var(--gray-1, #D9D9D9);
+    background: var(--white, #ffffff);
     padding: 14px;
     margin: 24px 0;
 }
 
 .order-confirmation p {
     margin: 6px 0 0 0;
-    color: var(--gray-4);
+    color: var(--gray-2, #595D62);
 }
 
 .help-contact {
@@ -157,10 +156,10 @@
 }
 
 .help-text a {
-    color: var(--color-blue);
+    color: var(--color-blue, #3045E1);
     text-decoration: underline;
     text-underline-offset: 4px;
-    text-decoration-color: var(--color-blue);
+    text-decoration-color: var(--color-blue, #3045E1);
 }
 
 .confirmation-flex {
@@ -173,7 +172,7 @@
 .confirmation-flex svg {
     width: 60px;
     height: 60px;
-    color: var(--color-blue);
+    color: var(--color-blue, #3045E1);
 }
 
 .confirmation-text p {

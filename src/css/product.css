@@ -33,11 +33,11 @@
 }
 
 .star-filled {
-    color: var(--color-yellow); /* Gold color for filled stars */
+    color: var(--color-yellow, #FFAD0F);
 }
 
 .star-empty {
-    color: var(--gray-2); /* Grey color for empty stars */
+    color: var(--gray-1, #D9D9D9);
 }
 
 .game-tags {
@@ -68,12 +68,12 @@
 .current-price {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--color-orange);
+    color: var(--color-orange, #CA4039);
 }
 
 .original-price {
     font-size: 2rem;
-    color: var(--gray-4);
+    color: var(--gray-2, #595D62);
     text-decoration: line-through;
 }
 /* Quantity selector */
