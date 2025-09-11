@@ -12,6 +12,7 @@ async function fetchAndCreateProducts() {
       return dateB - dateA;
     });
     const products = sortedByNewest.slice(5, 10);
+    
     newReleases.innerHTML = '';
     products.forEach(game => {
         newReleases.appendChild(createGameCard(game));
