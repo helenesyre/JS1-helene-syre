@@ -1,6 +1,12 @@
 /* Navbar */
 /* Menu button - hamburger */
-/* From https://www.youtube.com/watch?v=neb7WcDixoY&t=1s */
+/* Code from: 
+Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
+@publisher: Tyler Potts
+@date: 2022-01-31
+@link: https://www.youtube.com/watch?v=neb7WcDixoY&t=1s 
+*/
+
 .app {
   display: flex;
   min-height: 100vh;

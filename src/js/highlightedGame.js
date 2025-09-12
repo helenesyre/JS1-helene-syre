@@ -2,10 +2,14 @@ import useFetch from "./useFetch.js";
 
 const highlightedGame = document.querySelector(".highlightedGame");
 
+/**
+ * Fetch and create highlighted game card from the API.
+ * Creates an <a> element containing the game’s image, title, description, and links.
+ */
 async function fetchAndCreateHighlightedGame() {
   try {
-    const response = await useFetch(`/gamehub/2bbaab8b-57b0-47f6-ab8d-8d443ac767da`);
-    const game = response.data;
+    const response = await useFetch(`/gamehub/2bbaab8b-57b0-47f6-ab8d-8d443ac767da`); // Fetch the highlighted game by its ID
+    const game = response.data; // Get the game data
 
     const gameHTML = document.createElement('a'); // Makes an <a> for each game
 

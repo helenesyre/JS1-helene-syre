@@ -2,7 +2,6 @@ import { renderCheckout } from "../src/js/components.js";
 
 renderCheckout(); 
 
-
 /*
  * Toggle visibility of the credit/debit card fields
  * based on the selected payment option.
@@ -46,7 +45,6 @@ emailInput.addEventListener('input', () => {
     emailInput.classList.remove('input-error');
   }
 });
-
 
 // Phone validation
 const phoneInput = document.getElementById('phone-number');

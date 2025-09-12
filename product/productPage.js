@@ -5,6 +5,12 @@ import useFetch from "../src/js/useFetch.js";
 
 let quantity = 1;
 
+/**
+ * Fetch and display product details on the product page.
+ * Uses the `useFetch` utility to request game data.
+ * Updates the page title and meta description.
+ * Renders the game information in the product container.
+ */
 async function displayProductDetails() {
     const productContainer = document.getElementById('product-container');
     const gameHTML = document.createElement('div');
@@ -104,9 +110,9 @@ async function displayProductDetails() {
           </div>
         `;
 
-        const decreaseButton = gameHTML.querySelector(`#decrease`);
-        const increaseButton = gameHTML.querySelector(`#increase`);
-        const quantityDisplay = gameHTML.querySelector(`#quantity`);
+        const decreaseButton = gameHTML.querySelector(`#decrease`); // Decrease button
+        const increaseButton = gameHTML.querySelector(`#increase`); // Increase button
+        const quantityDisplay = gameHTML.querySelector(`#quantity`); // Quantity display
 
         decreaseButton.addEventListener('click', () => {
           if (quantity > 1) {
@@ -125,6 +131,9 @@ async function displayProductDetails() {
             useCart.addItem(game.data, quantity);
             renderCart();
         });
+        /**
+         * Fetch and display similar games based on genre.
+         */
         productContainer.innerHTML = ''; // Clear any existing content
         productContainer.appendChild(gameHTML);
 

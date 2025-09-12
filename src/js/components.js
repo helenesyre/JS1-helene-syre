@@ -1,6 +1,11 @@
 // Import the custom useCart module to access cart functionality
 import useCart from "./useCart.js";
 
+/**
+ * Create a game card element
+ * @param {Object} game - The game data
+ * @returns {HTMLElement} The game card element
+ */
 export function createGameCard(game) {
     const gameCard = document.createElement('div'); // Makes a <div> for each game
 
@@ -61,6 +66,11 @@ export function createGameCard(game) {
     return gameCard;
 }
 
+/**
+ * Create a cart item element
+ * @param {Object} cartItem - The cart item data
+ * @returns {HTMLElement} The cart item element
+ */
 function createCartItem(cartItem) {
     const cartItemDiv = document.createElement('div');
     cartItemDiv.classList.add('item');
@@ -110,6 +120,9 @@ function createCartItem(cartItem) {
     return cartItemDiv;
 }
 
+/**
+ * Render the shopping cart
+ */
 export function renderCart() {
     const cartContainer = document.getElementById("cartList");
     const cartBadge = document.querySelector(".cart-badge");
@@ -139,6 +152,9 @@ export function renderCart() {
     }
 }
 
+/**
+ * Render the checkout summary of the cart on the checkout page
+ */
 export function renderCheckout() {
   const checkoutContainer = document.querySelector('#order-summary');
   const cartItems = useCart.getItems();
@@ -202,20 +218,23 @@ export function renderCheckout() {
     });
 
     checkoutContainer.appendChild(itemLi);
-  });
+});
 
-  const total = document.getElementById('total');
-  const subtotal = document.getElementById('subtotal');
-  const taxes = document.getElementById('taxes');
+    /**
+     * Render totals: subtotal, taxes, total
+     */
+    const total = document.getElementById('total');
+    const subtotal = document.getElementById('subtotal');
+    const taxes = document.getElementById('taxes');
 
-  subtotal.textContent = `$${useCart.getCartTotal().toFixed(2)}`;
+    subtotal.textContent = `$${useCart.getCartTotal().toFixed(2)}`;
 
-  taxes.textContent = `$${(useCart.getCartTotal() * 0.25).toFixed(2)}`;
-  total.textContent = `$${(useCart.getCartTotal() + useCart.getCartTotal() * 0.25).toFixed(2)}`;
-  if (useCart.getCartTotal() === 0) {
-    // If the cart is empty, display a message or take appropriate action
-    checkoutContainer.innerHTML = '<p>Your cart is empty</p>';
-    const buyNowButton = document.getElementById('buyNowButton');
-    buyNowButton.disabled = true;
-  }
+    taxes.textContent = `$${(useCart.getCartTotal() * 0.25).toFixed(2)}`;
+    total.textContent = `$${(useCart.getCartTotal() + useCart.getCartTotal() * 0.25).toFixed(2)}`;
+    if (useCart.getCartTotal() === 0) {
+        // If the cart is empty, display a message or take appropriate action
+        checkoutContainer.innerHTML = '<p>Your cart is empty</p>';
+        const buyNowButton = document.getElementById('buyNowButton');
+        buyNowButton.disabled = true;
+    }
 }

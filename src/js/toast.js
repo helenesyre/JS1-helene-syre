@@ -1,4 +1,8 @@
-
+/**
+ * Show a toast notification
+ * @param {string} message - The message to display
+ * @returns {void}
+ */
 export function showToast(message) {
   const toast = document.createElement('div');
   toast.className = 'toast';

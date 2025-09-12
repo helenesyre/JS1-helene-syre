@@ -3,6 +3,10 @@ import useFetch from "./useFetch.js";
 
 const newReleases = document.querySelector(".newReleases");
 
+/**
+ * Fetches products from the API and create product cards for new releases.
+ * Sorts them by release date (newest first).
+ */
 async function fetchAndCreateProducts() {
   try {
     const response = await useFetch('/gamehub');
@@ -12,7 +16,7 @@ async function fetchAndCreateProducts() {
       return dateB - dateA;
     });
     const products = sortedByNewest.slice(5, 10);
-    
+
     newReleases.innerHTML = '';
     products.forEach(game => {
         newReleases.appendChild(createGameCard(game));

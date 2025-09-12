@@ -16,8 +16,12 @@ async function fetchAndCreateProducts() {
     console.error("Error fetching products:", error);
   }
 }
-
-/* Code inspired by https://www.youtube.com/watch?v=RKfMtCNx1z0 */
+/* Code inspired by: 
+Filterable Image Gallery in HTML CSS & JavaScript
+@publisher: CodingNepal
+@date: 2023-05-17
+@link: https://www.youtube.com/watch?v=RKfMtCNx1z0
+*/
 
 // Select all buttons inside the container with class "filter-buttons"
 const buttons = document.querySelectorAll('.filter-buttons button');

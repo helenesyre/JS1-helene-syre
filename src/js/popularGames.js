@@ -5,6 +5,9 @@ const container = document.querySelector(".container");
 
 let products = [];
 
+/**
+ * Fetch and create product cards for popular games.
+ */
 async function fetchAndCreateProducts() {
   try {
     const response = await useFetch("/gamehub");
