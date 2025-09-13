@@ -58,6 +58,9 @@ export function createGameCard(game) {
                 </div>
         </div>`;
 
+    /**
+     * Add event listener for "Add to Cart" button
+     */
     const addToCartButton = gameCard.querySelector('.add-cart');
     addToCartButton.addEventListener('click', () => {
         useCart.addItem(game);
