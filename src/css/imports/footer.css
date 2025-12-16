@@ -1,70 +1,70 @@
 /* Footer */
 footer {
-    background: var(--color-primary,#222);
-    color: var(--color-secondary, #FAF9F6);
-    padding: 2rem;
-    margin-top: auto;
+  background: var(--color-primary,#222);
+  color: var(--color-secondary, #FAF9F6);
+  padding: 2rem;
+  margin-top: auto;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer-col {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-col ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-col ul li a {
-    color: #ccc;
-    text-decoration: none;
-    white-space: nowrap;
+  color: #ccc;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .footer-col ul li a:hover,
 .footer-terms a:hover {
-    color: var(--white,#FFF);
+  color: var(--white,#FFF);
 }
 
 .social-links i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--color-secondary, #FAF9F6);
-    padding-top: 20px;
-    margin-top: 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+  border-top: 1px solid var(--color-secondary, #FAF9F6);
+  padding-top: 20px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-terms {
-    display: flex;
-    gap: 16px;
-    flex-direction: row;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
 }
 
 .footer-terms a {
-    color: var(--color-secondary, #FAF9F6);
-    text-decoration: none;
+  color: var(--color-secondary, #FAF9F6);
+  text-decoration: none;
 }
