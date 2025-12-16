@@ -58,7 +58,7 @@ h2 {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -396,11 +396,11 @@ h2 {
 }
 
 .highlightedGame {
-    position: relative;
-    min-height: 160px;
+  position: relative;
+  min-height: 160px;
 }
 
 #product-container {
-    position: relative;
-    min-height: 160px;
+  position: relative;
+  min-height: 160px;
 }

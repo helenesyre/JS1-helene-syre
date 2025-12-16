@@ -3,7 +3,7 @@
   --color-secondary: #FAF9F6;
   --color-secondary-darker: #EFEEED;
 
-  /* colors */
+  /* Colors */
   --color-blue: #3045E1;
   --color-blue-hover: #2439C4;
   --color-burgundy: #561A38;
@@ -12,12 +12,12 @@
   --color-yellow: #FFAD0F;
   --alert: #960000;
 
-  /* shades */
+  /* Shades */
   --gray-2: #595D62;
   --gray-1: #D9D9D9;
   --white:#FFF;
 
-  /* fonts */
+  /* Fonts */
   body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -45,12 +45,12 @@
     font-weight: 500;
   }
 
-  /* nav */
+  /* Nav */
   .sidebar nav a {
     font-weight: 500;
   }
 
-  /* buttons */
+  /* Buttons */
   .cta-sm,
   .cta-md,
   .cta-l {
@@ -70,7 +70,7 @@
     font-weight: 600;
   }
 
-  /* cards */
+  /* Cards */
   .featured-card h2 {
     font-size: 2.25rem;
   }
@@ -90,7 +90,7 @@
     font-style: normal;
   }
 
-  /* footer */
+  /* Footer */
   .footer-col ul li a {
     font-size: 1rem;
   }
@@ -121,7 +121,7 @@
     font-weight: 600;
   }
 
-  /* forms */
+  /* Forms */
   .form-group label {
     font-size: 1rem;
     font-weight: 400;

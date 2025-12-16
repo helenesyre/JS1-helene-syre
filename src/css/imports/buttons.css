@@ -31,7 +31,7 @@
   gap: 8px;
 }
 
-/* orange buttons */
+/* Orange buttons */
 .cta-color-orange {
   background-color: var(--color-orange, #CA4039);
   color: var(--color-secondary, #FAF9F6);
@@ -45,7 +45,7 @@
   transition: color 0.3s;
 }
 
-/* blue buttons */
+/* Blue buttons */
 .cta-color-blue {
   background-color: var(--color-blue, #3045E1);
   color: var(--color-secondary, #FAF9F6);
@@ -66,7 +66,7 @@
   opacity: 0.7;
 }
 
-/* no padding buttons */
+/* No padding buttons */
 .cta-no-padding, .wishlist {
   background-color: transparent;
   border: none;
