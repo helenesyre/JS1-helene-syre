@@ -9,14 +9,12 @@ async function fetchAndCreateProducts() {
     const products = data.data;
     container.innerHTML = '';
     products.forEach(game => {
-        container.appendChild(createGameCard(game));
+      container.appendChild(createGameCard(game));
     });
-    
   } catch (error) {
-    console.error("Error fetching products:", error);
   }
 }
-/* Code inspired by: 
+/* Code inspired by:
 Filterable Image Gallery in HTML CSS & JavaScript
 @publisher: CodingNepal
 @date: 2023-05-17
@@ -25,8 +23,6 @@ Filterable Image Gallery in HTML CSS & JavaScript
 
 // Select all buttons inside the container with class "filter-buttons"
 const buttons = document.querySelectorAll('.filter-buttons button');
-// Select all cards (items to filter)
-const cards = document.querySelectorAll('.card');
 
 /**
  * Add click event listeners to each filter button
@@ -47,18 +43,17 @@ buttons.forEach(button => {
     // Loop through all cards to show or hide based on the filter
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-        const parent = card.parentElement; // The wrapper
-        const genre = card.dataset.genre.toLowerCase(); // Get the genre from data attribute and convert to lowercase
+      const parent = card.parentElement; // The wrapper
+      const genre = card.dataset.genre.toLowerCase(); // Get the genre from data attribute and convert to lowercase
 
-        // Show the card if filter is 'all' or if genre matches filter
-        if (filter === 'all' || genre.includes(filter)) {
-            parent.style.display = ''; // Show the card
-        } else {
-            parent.style.display = 'none'; // Hide the card
-        }
+      // Show the card if filter is 'all' or if genre matches filter
+      if (filter === 'all' || genre.includes(filter)) {
+        parent.style.display = ''; // Show the card
+      } else {
+        parent.style.display = 'none'; // Hide the card
+      }
     });
   });
 });
-
 
 fetchAndCreateProducts();

@@ -26,15 +26,14 @@ function renderConfirmation() {
 
         <div>
           <div class="summary-price">
-            ${
-              item.onSale && item.discountedPrice
-                ? `
+            ${item.onSale && item.discountedPrice
+        ? `
                   <p class="card-price-original">$${(item.price * item.quantity).toFixed(2)}</p>
                   <p class="card-price-discount">$${(item.discountedPrice * item.quantity).toFixed(2)}</p>
                   `
-                : `<p class="card-price">$${(item.price * item.quantity).toFixed(2)}</p>`
-            }
-          </div>     
+        : `<p class="card-price">$${(item.price * item.quantity).toFixed(2)}</p>`
+      }
+          </div>
         </div>
       </li>
     `;
@@ -52,9 +51,11 @@ function renderConfirmation() {
   total.textContent = `$${(useCart.getCartTotal() + useCart.getCartTotal() * 0.25).toFixed(2)}`;
   if (useCart.getCartTotal() === 0) {
     // If the cart is empty, display a message or take appropriate action
-    checkoutContainer.innerHTML = '<p>Your cart is empty</p>';
+    confirmationContainer.innerHTML = '<p>Your cart is empty</p>';
     const buyNowButton = document.getElementById('buyNowButton');
-    buyNowButton.disabled = true;
+    if (buyNowButton) {
+      buyNowButton.disabled = true;
+    }
   }
 
   const continueShoppingButton = document.getElementById('continueShoppingButton');

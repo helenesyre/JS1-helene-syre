@@ -19,10 +19,9 @@ async function fetchAndCreateProducts() {
 
     newReleases.innerHTML = '';
     products.forEach(game => {
-        newReleases.appendChild(createGameCard(game));
+      newReleases.appendChild(createGameCard(game));
     });
   } catch (error) {
-    console.error("Error fetching products:", error);
   }
 }
 

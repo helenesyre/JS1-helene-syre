@@ -15,10 +15,9 @@ async function fetchAndCreateProducts() {
 
     container.innerHTML = '';
     products.forEach(game => {
-        container.appendChild(createGameCard(game));
+      container.appendChild(createGameCard(game));
     });
   } catch (error) {
-    console.error("Error fetching products:", error);
   }
 }
 fetchAndCreateProducts();

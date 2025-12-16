@@ -1,20 +1,20 @@
 import { renderCheckout } from "../src/js/components.js";
 
-renderCheckout(); 
+renderCheckout();
 
-/*
- * Toggle visibility of the credit/debit card fields
- * based on the selected payment option.
- */
 const cardRadio = document.getElementById('payment-card');
 const neoRadio = document.getElementById('payment-neopay');
 const cardDetails = document.querySelector('.payment-card-details');
 const cardInputs = cardDetails.querySelectorAll('input');
 
+/**
+ * Toggle visibility of the credit/debit card fields
+ * based on the selected payment option.
+ */
 function toggleCardDetails() {
   if (cardRadio.checked) {
     cardDetails.style.display = 'flex'; // Keep flex layout
-    
+
     // Make card inputs required
     cardInputs.forEach(input => input.setAttribute('required', ''));
   } else {
@@ -58,7 +58,6 @@ phoneInput.addEventListener('input', () => {
     phoneInput.classList.remove('input-error');
   }
 });
-
 
 // Postal code
 const postalInput = document.getElementById('postal-code');

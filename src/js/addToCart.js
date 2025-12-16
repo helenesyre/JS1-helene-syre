@@ -8,11 +8,11 @@ let body = document.querySelector("body");
  * and removes the class when the close button is clicked.
  */
 export function addCartEventListener() {
-    iconCart.addEventListener("click", () => {
-        body.classList.toggle("show-cart");
-    });
+  iconCart.addEventListener("click", () => {
+    body.classList.toggle("show-cart");
+  });
 
-    closeCart.addEventListener("click", () => {
-        body.classList.remove("show-cart");
-    });
+  closeCart.addEventListener("click", () => {
+    body.classList.remove("show-cart");
+  });
 }
