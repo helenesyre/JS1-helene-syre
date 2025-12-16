@@ -1,84 +1,85 @@
 .product-page {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: start;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: start;
 }
 
 .game-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-    flex: 1;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 20px;
+	flex: 1;
 }
 
 .game-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 }
 
 .rating {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	margin-bottom: 20px;
 }
 
 .star-filled,
 .star-empty {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .star-filled {
-    color: var(--color-yellow, #FFAD0F);
+	color: var(--color-yellow, #FFAD0F);
 }
 
 .star-empty {
-    color: var(--gray-1, #D9D9D9);
+	color: var(--gray-1, #D9D9D9);
 }
 
 .game-tags {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	margin-top: 20px;
 }
 
 .tag {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
 }
 
 .game-description {
-    width: 350px;
+	width: 350px;
 }
 
 .price-section {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	align-items: center;
 }
 
 .current-price {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--color-orange, #CA4039);
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--color-orange, #CA4039);
 }
 
 .original-price {
-    font-size: 2rem;
-    color: var(--gray-2, #595D62);
-    text-decoration: line-through;
+	font-size: 2rem;
+	color: var(--gray-2, #595D62);
+	text-decoration: line-through;
 }
+
 /* Quantity selector */
 .quantity-selector p {
-    margin: 0 0 10px 0;
-    font-weight: 500;
-    font-size: 1.1rem;
+	margin: 0 0 10px 0;
+	font-weight: 500;
+	font-size: 1.1rem;
 }

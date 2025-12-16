@@ -3,7 +3,7 @@
   width: fit-content ;
   min-width: 350px;
   background-color: var(--color-secondary, #FAF9F6);
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
   position: fixed;
   inset: 0 0 0 auto;
   z-index: 10;
@@ -61,7 +61,7 @@ body.show-cart .cart-tab {
 
 .cart-tab .cart-btns .close-btn {
   background-color: var(--gray-1, #D9D9D9);
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
 }
 
 .cart-btns {
@@ -105,12 +105,10 @@ body.show-cart .cart-tab {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* gap: 8px; */
   border: 1px solid var(--gray-1, #D9D9D9);
   border-radius: 6px;
   width: fit-content;
-  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.1);
-  /* padding: 4px 8px; */
+  box-shadow: 0 0 10px 2px rgb(34 34 34 / 10%);
 }
 
 .decrease, .increase {
@@ -142,7 +140,7 @@ body.show-cart .cart-tab {
 }
 
 .cart-info .card-price {
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
   font-size: 1.2rem;
 }
 

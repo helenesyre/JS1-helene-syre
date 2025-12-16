@@ -1,10 +1,10 @@
 /* Navbar */
 /* Menu button - hamburger */
-/* Code from: 
+/* Code from:
 Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
 @publisher: Tyler Potts
 @date: 2022-01-31
-@link: https://www.youtube.com/watch?v=neb7WcDixoY&t=1s 
+@link: https://www.youtube.com/watch?v=neb7WcDixoY&t=1s
 */
 
 .app {
@@ -101,7 +101,7 @@ Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
 
 .sidebar nav a {
   display: block;
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
   font-size: 0.9rem;
   transition: background-color 0.3s;
   width: 100%;
@@ -127,7 +127,7 @@ Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
 }
 
 .sidebar .icon-m {
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
 }
 
 .sidebar .active-icon,
@@ -197,7 +197,7 @@ Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
   font-size: 1rem;
   border: none;
   outline: none;
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
   opacity: 0.7;
   margin-right: 16px;
   font-family: inherit;
@@ -220,7 +220,7 @@ Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
 }
 
 .search-icon {
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
   opacity: 0.7;
 }
 
@@ -290,7 +290,7 @@ Build a Responsive Sidebar in 10 minutes | HTML, CSS & JavaScript
 
 .page {
   font-weight: 400;
-  color: var(--color-primary, #222222);
+  color: var(--color-primary,#222);
 }
 
 .page:hover {

@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-    background: var(--color-primary, #222222);
+    background: var(--color-primary,#222);
     color: var(--color-secondary, #FAF9F6);
     padding: 2rem;
     margin-top: auto;
@@ -40,7 +40,7 @@ footer {
 
 .footer-col ul li a:hover,
 .footer-terms a:hover {
-    color: var(--white, #ffffff);
+    color: var(--white,#FFF);
 }
 
 .social-links i {

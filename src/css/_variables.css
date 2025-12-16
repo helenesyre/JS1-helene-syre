@@ -1,8 +1,5 @@
-/* Use this file to store your useful variables */
-/* This could be colors, fonts, or padding sizes! */
-
 :root {
-  --color-primary: #222222;
+  --color-primary:#222;
   --color-secondary: #FAF9F6;
   --color-secondary-darker: #EFEEED;
 
@@ -18,7 +15,7 @@
   /* shades */
   --gray-2: #595D62;
   --gray-1: #D9D9D9;
-  --white: #FFFFFF;
+  --white:#FFF;
 
   /* fonts */
   body {
@@ -77,7 +74,7 @@
   .featured-card h2 {
     font-size: 2.25rem;
   }
-  
+
   .featured-card p {
     font-size: 1rem;
   }
@@ -129,5 +126,4 @@
     font-size: 1rem;
     font-weight: 400;
   }
-
 }
