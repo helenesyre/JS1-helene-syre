@@ -4,6 +4,8 @@
 
 On this project we had to decide to use a exsisting (Rainydays) project, or a fresh project. I decided to start a fresh one. I chose the online game store "Gamehub" focused on browsing, filtering, and buying games with an intuitive checkout experience.
 
+---
+
 ## 📝 Description
 
 For this project we used new JavaScript skills to create an interactive online store that displays products from an API endpoint. We could choose from **Rainy Days API**, **GameHub API**, or **Square Eyes API**. The products are displayed in HTML and users can create a basket of items.
